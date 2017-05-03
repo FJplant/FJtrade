@@ -1,0 +1,35 @@
+[Visual C++]Double buffering(더블 버퍼링) 
+// 더블 버퍼링을 위한 DC과 BITMAP 생성
+CDC mDC;
+CBitmap mBitmap, *pOldBitmap;
+CRect m_rtCtrlSize;
+
+// 윈도우 크기를 알아내자.
+GetClientRect(&m_rtCtrlSize);
+
+// MDC와 비트맵에 현재 dc를 정의 및 설정
+mDC.CreateCompatibleDC(&dc);
+mBitmap.CreateCompatibleBitmap(&dc, m_rtCtrlSize.Width(), m_rtCtrlSize.Height()); 
+pOldBitmap = mDC.SelectObject(&mBitmap);
+
+// 펜 설정
+CPen myPen, *pOldPen;
+myPen.CreatePen(PS_SOLID, 1, RGB(103, 99, 114)); // 굵기 1 픽셀의 그레이 솔리드 펜 생성
+pOldPen = mDC.SelectObject(&myPen);
+
+// 메모리 dc에 내용을 그리고
+mDC.Rectangle(m_rtCtrlSize);
+
+// 일반 dc에서 메모리 dc의 내용을 가져온다.
+dc.BitBlt(0, 0, m_rtCtrlSize.Width(), m_rtCtrlSize.Height(), &mDC, 0, 0, SRCCOPY);
+
+// 설정한 객체를 원상태로 복귀
+mDC.SelectObject(pOldBitmap);
+mDC.SelectObject(pOldPen);
+
+//----------------------------------------------------------------------------------
+어떠한 기술이든 정확한 사용 방법에 맞게 사용하자.
+내가 볼 때 위의 기술이 가장 정확하게 더블 버퍼링을 사용했다고 생각된다.
+참고~~~~
+
+

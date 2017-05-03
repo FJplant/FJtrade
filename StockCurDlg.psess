@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<VSPerformanceSession Version="1.00">
+  <Options>
+    <Solution>J:\Projects\PortfolioManager\90.프로토타입\StockCurDlg\StockCurDlg.sln</Solution>
+    <CollectionMethod>Instrumentation</CollectionMethod>
+    <AllocationMethod>None</AllocationMethod>
+    <LaunchRuntimeControl>true</LaunchRuntimeControl>
+    <AddReport>true</AddReport>
+    <UniqueReport>Timestamp</UniqueReport>
+    <SamplingMethod>Cycles</SamplingMethod>
+    <CycleCount>10000000</CycleCount>
+    <PageFaultCount>10</PageFaultCount>
+    <SysCallCount>10</SysCallCount>
+    <SamplingCounter Name="" ReloadValue="00000000000f4240" DisplayName="" />
+    <RelocateBinaries>false</RelocateBinaries>
+    <HardwareCounters EnableHWCounters="false" />
+    <EtwSettings />
+    <PdhSettings>
+      <PdhCountersEnabled>false</PdhCountersEnabled>
+      <PdhCountersRate>500</PdhCountersRate>
+      <PdhCounters>
+        <PdhCounter>\Memory\Pages/sec</PdhCounter>
+        <PdhCounter>\PhysicalDisk(_Total)\Avg. Disk Queue Length</PdhCounter>
+        <PdhCounter>\Processor(_Total)\% Processor Time</PdhCounter>
+      </PdhCounters>
+    </PdhSettings>
+  </Options>
+  <ExcludeSmallFuncs>true</ExcludeSmallFuncs>
+  <PreinstrumentEvent>
+    <InstrEventExclude>false</InstrEventExclude>
+  </PreinstrumentEvent>
+  <PostinstrumentEvent>
+    <InstrEventExclude>false</InstrEventExclude>
+  </PostinstrumentEvent>
+  <Binaries>
+    <ProjBinary>
+      <Path>j:\Projects\PortfolioManager\90.프로토타입\StockCurDlg\Debug\StockCurDlg.exe</Path>
+      <ArgumentTimestamp>01/01/0001 00:00:00</ArgumentTimestamp>
+      <Instrument>true</Instrument>
+      <Sample>true</Sample>
+      <LaunchProject>true</LaunchProject>
+      <LaunchMethod>Executable</LaunchMethod>
+      <ExecutablePath>j:\Projects\PortfolioManager\90.프로토타입\StockCurDlg\Debug\StockCurDlg.exe</ExecutablePath>
+      <StartupDirectory>j:\Projects\PortfolioManager\90.프로토타입\StockCurDlg\</StartupDirectory>
+      <NetAppHost>IIS</NetAppHost>
+      <NetBrowser>InternetExplorer</NetBrowser>
+      <ExcludeSmallFuncs>true</ExcludeSmallFuncs>
+      <PreinstrumentEvent>
+        <InstrEventProgram />
+        <InstrEventArguments />
+        <InstrEventDescription />
+        <InstrEventExclude>false</InstrEventExclude>
+      </PreinstrumentEvent>
+      <PostinstrumentEvent>
+        <InstrEventProgram />
+        <InstrEventArguments />
+        <InstrEventDescription />
+        <InstrEventExclude>false</InstrEventExclude>
+      </PostinstrumentEvent>
+      <ProjRef>{53ADD9A9-FAC6-4290-986C-FF1EA73E491A}|StockCurDlg.vcproj</ProjRef>
+      <ProjPath>J:\Projects\PortfolioManager\90.프로토타입\StockCurDlg\StockCurDlg.vcproj</ProjPath>
+      <ProjName>StockCurDlg</ProjName>
+    </ProjBinary>
+  </Binaries>
+  <Launches>
+    <ProjBinary>
+      <Path>:PB:{53ADD9A9-FAC6-4290-986C-FF1EA73E491A}|StockCurDlg.vcproj</Path>
+    </ProjBinary>
+  </Launches>
+  <RuntimeMarks>
+    <MarkName>표시 1</MarkName>
+    <MarkName>표시 2</MarkName>
+    <MarkName>표시 3</MarkName>
+    <MarkName>표시 4</MarkName>
+    <MarkName>표시 5</MarkName>
+    <MarkName>표시 6</MarkName>
+    <MarkName>표시 7</MarkName>
+    <MarkName>표시 8</MarkName>
+    <MarkName>표시 9</MarkName>
+    <MarkName>표시 10</MarkName>
+  </RuntimeMarks>
+</VSPerformanceSession>

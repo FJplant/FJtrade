@@ -1,0 +1,19 @@
+
+	// StockCurDlg.idl : IDL source for StockCurDlg.exe
+//
+// This file will be processed by the MIDL tool to
+// produce the type library (StockCurDlg.tlb) and marshalling code.
+import "oaidl.idl";
+import "ocidl.idl";
+[
+	uuid(9BADB75B-DB1E-4E52-9F81-653FE31928A5),
+	version(1.0),
+	helpstring("StockCurDlg 1.0 Type Library")
+]
+library StockCurDlgLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+};
+
+	

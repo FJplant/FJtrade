@@ -1,0 +1,252 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 한국어 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\StockCurDlg.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.kor\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\StockCurDlg.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "FJTrader 정보"
+FONT 9, "굴림", 0, 0, 0x0
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "FJTrader 버전 0.1",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2009,2010,2011",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "확인",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_STOCKCURDLG_DIALOG DIALOGEX 0, 0, 638, 478
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "StockCurDlg"
+FONT 9, "굴림", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "확인",IDOK,581,7,50,14,WS_DISABLED
+    PUSHBUTTON      "취소(종료)",IDCANCEL,581,27,50,14
+    LTEXT           "1. Dialog based로 프로젝트 생성",IDC_STATIC,7,16,193,9
+    LTEXT           "2. ClassView의 젤 상위 노드에서 단축메뉴로  New ATL  Object 선택 ->_Module이 생성됨",IDC_STATIC,7,25,285,9
+    LTEXT           "프로젝트 생성 방법",IDC_STATIC,7,7,244,8
+    PUSHBUTTON      "옵션정보출력",IDC_BUTTON7,465,7,46,14
+    EDITTEXT        IDC_EDITOUTPUT,379,184,252,96,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | WS_VSCROLL | WS_HSCROLL
+    CONTROL         "",IDC_OPTION_CUR_LIST,"SysListView32",LVS_REPORT | WS_BORDER | WS_TABSTOP,7,113,313,58
+    CONTROL         "",IDC_OPTION_NEXT_LIST,"SysListView32",LVS_REPORT | WS_BORDER | WS_TABSTOP,323,113,308,56
+    EDITTEXT        IDC_FUTUREPRICE,376,87,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_BASIS,452,87,40,14,ES_AUTOHSCROLL
+    LTEXT           "선물현재가",IDC_STATIC,337,90,35,8
+    EDITTEXT        IDC_FUTUREOPEN,526,87,40,14,ES_AUTOHSCROLL
+    LTEXT           "베이시스",IDC_STATIC,424,90,28,8
+    LTEXT           "미결제",IDC_STATIC,502,90,22,8
+    LTEXT           "당월물 옵션 시세표",IDC_STATIC,6,103,60,8
+    LTEXT           "차월물 옵션 시세표",IDC_STATIC,324,105,60,8
+    EDITTEXT        IDC_K200,591,87,40,14,ES_AUTOHSCROLL
+    LTEXT           "K200",IDC_STATIC,570,90,16,8
+    COMBOBOX        IDC_NEWS,373,69,258,30,CBS_DROPDOWN | CBS_SORT | WS_TABSTOP
+    LTEXT           "뉴스",IDC_STATIC,338,72,15,8
+    LTEXT           "디버그출력창",IDC_STATIC,378,175,42,8
+    LTEXT           "1.옵션 미결제 총합, 옵션 미결제 금액 및 \r\n전일대비 미결제 변동 추이등을 표시한다",IDC_STATIC,327,7,130,18
+    PUSHBUTTON      "Test",IDC_BUTTON8,514,28,50,14
+    PUSHBUTTON      "Buy Call",IDC_BUTTON9,10,56,50,14
+    PUSHBUTTON      "Sell Call",IDC_BUTTON10,10,77,50,14
+    CONTROL         "",IDC_PROGRESS1,"msctls_progress32",WS_BORDER,373,51,258,14
+    LTEXT           "Logs",IDC_STATIC,338,55,17,8
+    PUSHBUTTON      "차트출력",IDC_BUTTON11,514,7,50,14
+    PUSHBUTTON      "선물옵션거래내역저장",IDC_BUTTON12,433,28,77,14
+    PUSHBUTTON      "실시간 계좌평가",IDC_BUTTON13,299,29,56,14
+    PUSHBUTTON      "결제기준 잔고",IDC_BUTTON14,358,30,56,14
+    CONTROL         "선물최근거래",IDC_CHECK_FUTURE_DIFF_GRAPH,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,256,54,57,10
+    LTEXT           "3. stdafx.h에 CybosPlus모듈(cpdib.dll,...) import 함",IDC_STATIC,7,34,182,10
+    PUSHBUTTON      "Buy Put",IDC_BUTTON15,93,57,50,14
+    PUSHBUTTON      "Sell Put",IDC_BUTTON16,93,77,50,14
+    GROUPBOX        "Put",IDC_STATIC,89,43,58,57,BS_CENTER
+    GROUPBOX        "Call",IDC_STATIC,7,44,58,56,BS_CENTER
+    CONTROL         "",IDC_OPEN_ORDER_LIST,"SysListView32",LVS_REPORT | WS_BORDER | WS_TABSTOP,7,233,369,47
+    LTEXT           "미체결현황",IDC_STATIC,7,223,35,8
+    CONTROL         "",IDC_FACCOUNTBALANCE,"SysListView32",LVS_REPORT | WS_BORDER | WS_TABSTOP,43,173,333,58
+    LTEXT           "잔고현황",IDC_STATIC,7,175,28,8
+    CONTROL         "주식시세수신",IDC_CHECK_STOCK_MARKET,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,194,93,57,10
+    CONTROL         "선물시세수신",IDC_CHECK_FUTURE_MARKET,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,194,54,57,10
+    CONTROL         "옵션시세수신",IDC_CHECK_OPTION_MARKET,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,194,67,57,10
+    CONTROL         "ELW시세수신",IDC_CHECK_ELW_MARKET,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,194,80,57,10
+    CONTROL         "옵션포지션감시",IDC_CHECK_OPTION_POSITION,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,254,69,64,10
+    CONTROL         "선물포지션감시",IDC_CHECK_FUTURE_POSITION,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,254,84,64,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041204B0"
+        BEGIN
+            VALUE "FileDescription", "StockCurDlg MFC 응용 프로그램"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "StockCurDlg"
+            VALUE "LegalCopyright", "Copyright (C) 2009"
+            VALUE "OriginalFilename", "StockCurDlg.EXE"
+            VALUE "ProductName", "StockCurDlg 응용 프로그램"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x412, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_STOCKCURDLG_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 631
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 471
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// REGISTRY
+//
+
+IDR_STOCKCURDLG         REGISTRY                "StockCurDlg.rgs"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "StockCurDlg 정보(&A)..."
+END
+
+#endif    // 한국어 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE 18, 1
+#pragma code_page(949)
+#endif //_WIN32
+#include "res\StockCurDlg.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.kor\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

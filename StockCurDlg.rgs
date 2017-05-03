@@ -1,0 +1,11 @@
+HKCR
+{
+	NoRemove AppID
+	{
+		{CEE1956F-49C9-4EF8-8F69-747E10A1590B} = s 'StockCurDlg'
+		'StockCurDlg.EXE'
+		{
+			val AppID = s {CEE1956F-49C9-4EF8-8F69-747E10A1590B}
+		}
+	}
+}
