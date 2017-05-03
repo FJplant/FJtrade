@@ -1,0 +1,915 @@
+﻿// Created by Microsoft (R) C/C++ Compiler Version 15.00.30729.01 (902bb2b0).
+//
+// j:\projects\portfoliomanager\90.프로토타입\stockcurdlg\release\cpdib.tlh
+//
+// C++ source equivalent of Win32 type library C:\app\HTS\DAISHIN\CYBOSPLUS\cpdib.dll
+// compiler-generated file created 06/12/11 at 15:19:11 - DO NOT EDIT!
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+namespace CPDIBLib {
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("859343f1-08fd-11d4-8231-00105a7c4f8c"))
+/* LIBID */ __DSCBO1Lib;
+struct __declspec(uuid("33518a10-0931-11d4-8231-00105a7c4f8c"))
+/* dual interface */ IDib;
+struct __declspec(uuid("b8944520-09c3-11d4-8232-00105a7c4f8c"))
+/* dispinterface */ _IDibEvents;
+struct __declspec(uuid("85934404-08fd-11d4-8231-00105a7c4f8c"))
+/* dual interface */ ICpField;
+struct __declspec(uuid("55d0c6e4-0966-11d4-8232-00105a7c4f8c"))
+/* dual interface */ ICpFields;
+struct /* coclass */ CpField;
+struct /* coclass */ CpFields;
+struct /* coclass */ StockMst;
+struct /* coclass */ StockCur;
+struct /* coclass */ StockBid;
+struct /* coclass */ StockFrnord;
+struct /* coclass */ StockJpbid;
+struct /* coclass */ StockJpbid2;
+struct /* coclass */ StockCbchk;
+struct /* coclass */ StockMember;
+struct /* coclass */ StockMember1;
+struct /* coclass */ StockWeek;
+struct /* coclass */ CbGraph1;
+struct /* coclass */ FutureMst;
+struct /* coclass */ FutureCurr;
+struct /* coclass */ FutureIndexi;
+struct /* coclass */ FutureWide;
+struct /* coclass */ FutureMo1;
+struct /* coclass */ OptionMst;
+struct /* coclass */ OptionCur;
+struct /* coclass */ OptionMo;
+struct /* coclass */ OptionGreek;
+struct /* coclass */ OptionGen;
+struct /* coclass */ OptionCallput;
+struct /* coclass */ StockIndexir;
+struct /* coclass */ StockIndexis;
+struct /* coclass */ FutureBid1;
+struct /* coclass */ StockMstm;
+struct /* coclass */ FutureIndexh;
+struct /* coclass */ StockStu;
+struct /* coclass */ FutureFtu;
+struct /* coclass */ OptionFtu;
+struct /* coclass */ FutureGr1;
+struct /* coclass */ OptionGr1;
+struct /* coclass */ CpSvr7225;
+struct /* coclass */ PgAtime8112;
+struct /* coclass */ StockAdS;
+struct /* coclass */ StockAdR;
+struct /* coclass */ CpConclusion;
+struct /* coclass */ StockAdkS;
+struct /* coclass */ StockAdkR;
+struct /* coclass */ CpFConclusion;
+struct /* coclass */ FutureWeek1;
+struct /* coclass */ OptionBid;
+struct /* coclass */ FutureK200;
+struct /* coclass */ OptionWeek;
+struct /* coclass */ OptionInfo;
+struct /* coclass */ OptionTV;
+struct /* coclass */ CpSvr7223;
+struct /* coclass */ CpSvr8092S;
+struct /* coclass */ CpSvr8561;
+struct /* coclass */ CpSvr8561T;
+struct /* coclass */ CpSvr8562;
+struct /* coclass */ CpSvr8563;
+struct /* coclass */ CpSvr8091;
+struct /* coclass */ CpSvr8091S;
+struct /* coclass */ SoptionWeek;
+struct /* coclass */ SoptionMst;
+struct /* coclass */ SoptionCur;
+struct /* coclass */ SoptionBid;
+struct /* coclass */ SoptionCallput;
+struct /* coclass */ CpSvr8081;
+struct /* coclass */ CpSvr8082;
+struct /* coclass */ CpSvr8083;
+struct /* coclass */ CpSvr8111;
+struct /* coclass */ CpSvr8111S;
+struct /* coclass */ CpSvr8111KS;
+struct /* coclass */ CpSvr8116;
+struct /* coclass */ CpSvr7818;
+struct /* coclass */ CpSvr7818C;
+struct /* coclass */ CpSvr7819;
+struct /* coclass */ CpSvr7819C;
+struct /* coclass */ CpSvr8300;
+struct /* coclass */ CpFore8311;
+struct /* coclass */ CpFore8312;
+struct /* coclass */ StockMst2;
+struct /* coclass */ StockOutMst;
+struct /* coclass */ StockOutCur;
+struct /* coclass */ OptionAtm;
+struct /* coclass */ FutureOptionStat;
+struct /* coclass */ FutureOptionStatPB;
+struct /* coclass */ StockIndexiChart;
+struct /* coclass */ FutOptRest;
+struct /* coclass */ ExpectIndexR;
+struct /* coclass */ ExpectIndexS;
+struct /* coclass */ FutureCurOnly;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(IDib, __uuidof(IDib));
+_COM_SMARTPTR_TYPEDEF(_IDibEvents, __uuidof(_IDibEvents));
+_COM_SMARTPTR_TYPEDEF(ICpField, __uuidof(ICpField));
+_COM_SMARTPTR_TYPEDEF(ICpFields, __uuidof(ICpFields));
+
+//
+// Type library items
+//
+
+struct __declspec(uuid("33518a10-0931-11d4-8231-00105a7c4f8c"))
+IDib : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetHeader))
+    _variant_t Header;
+    __declspec(property(get=GetData))
+    _variant_t Data;
+    __declspec(property(get=GetInput))
+    _variant_t Input;
+    __declspec(property(get=GetContinue))
+    long Continue;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    HRESULT Request ( );
+    HRESULT Subscribe ( );
+    HRESULT Unsubscribe ( );
+    _variant_t GetHeader ( );
+    _variant_t GetData ( );
+    _variant_t GetInput ( );
+    _variant_t GetHeaderValue (
+        int __MIDL__IDib0000 );
+    _variant_t GetDataValue (
+        int __MIDL__IDib0001,
+        int __MIDL__IDib0002 );
+    long GetContinue ( );
+    _variant_t GetInputValue (
+        int __MIDL__IDib0003 );
+    HRESULT SetInputValue (
+        int __MIDL__IDib0004,
+        const _variant_t & newVal );
+    short GetDibStatus ( );
+    _bstr_t GetDibMsg1 ( );
+    _bstr_t GetDibMsg2 ( );
+    short BlockRequest ( );
+    HRESULT SubscribeLatest ( );
+    short BlockRequest2 (
+        short BlockOption );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_Request ( ) = 0;
+      virtual HRESULT __stdcall raw_Subscribe ( ) = 0;
+      virtual HRESULT __stdcall raw_Unsubscribe ( ) = 0;
+      virtual HRESULT __stdcall get_Header (
+        /*[out,retval]*/ VARIANT * pVal ) = 0;
+      virtual HRESULT __stdcall get_Data (
+        /*[out,retval]*/ VARIANT * pVal ) = 0;
+      virtual HRESULT __stdcall get_Input (
+        /*[out,retval]*/ VARIANT * pVal ) = 0;
+      virtual HRESULT __stdcall raw_GetHeaderValue (
+        /*[in]*/ int __MIDL__IDib0000,
+        /*[out,retval]*/ VARIANT * pVal ) = 0;
+      virtual HRESULT __stdcall raw_GetDataValue (
+        /*[in]*/ int __MIDL__IDib0001,
+        /*[in]*/ int __MIDL__IDib0002,
+        /*[out,retval]*/ VARIANT * pVal ) = 0;
+      virtual HRESULT __stdcall get_Continue (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall raw_GetInputValue (
+        /*[in]*/ int __MIDL__IDib0003,
+        /*[out,retval]*/ VARIANT * pVal ) = 0;
+      virtual HRESULT __stdcall raw_SetInputValue (
+        /*[in]*/ int __MIDL__IDib0004,
+        /*[in]*/ VARIANT newVal ) = 0;
+      virtual HRESULT __stdcall raw_GetDibStatus (
+        /*[out,retval]*/ short * pVal ) = 0;
+      virtual HRESULT __stdcall raw_GetDibMsg1 (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall raw_GetDibMsg2 (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall raw_BlockRequest (
+        /*[out,retval]*/ short * pVal ) = 0;
+      virtual HRESULT __stdcall raw_SubscribeLatest ( ) = 0;
+      virtual HRESULT __stdcall raw_BlockRequest2 (
+        /*[in]*/ short BlockOption,
+        /*[out,retval]*/ short * pVal ) = 0;
+};
+
+struct __declspec(uuid("b8944520-09c3-11d4-8232-00105a7c4f8c"))
+_IDibEvents : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    // Methods:
+    HRESULT Received ( );
+};
+
+struct __declspec(uuid("85934404-08fd-11d4-8231-00105a7c4f8c"))
+ICpField : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetName))
+    _bstr_t Name;
+    __declspec(property(get=Getfid))
+    short fid;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    _bstr_t GetName ( );
+    short Getfid ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Name (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_fid (
+        /*[out,retval]*/ short * pVal ) = 0;
+};
+
+struct __declspec(uuid("55d0c6e4-0966-11d4-8232-00105a7c4f8c"))
+ICpFields : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetItem))
+    _variant_t Item[];
+    __declspec(property(get=GetCount))
+    long Count;
+    __declspec(property(get=Get_NewEnum))
+    IUnknownPtr _NewEnum;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    long GetCount ( );
+    _variant_t GetItem (
+        long Index );
+    IUnknownPtr Get_NewEnum ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ long Index,
+        /*[out,retval]*/ VARIANT * pVal ) = 0;
+      virtual HRESULT __stdcall get__NewEnum (
+        /*[out,retval]*/ IUnknown * * pVal ) = 0;
+};
+
+struct __declspec(uuid("85934405-08fd-11d4-8231-00105a7c4f8c"))
+CpField;
+    // [ default ] interface ICpField
+
+struct __declspec(uuid("55d0c6e5-0966-11d4-8232-00105a7c4f8c"))
+CpFields;
+    // [ default ] interface ICpFields
+
+struct __declspec(uuid("9ff543e2-fb11-11d3-8224-00105a7c4f8c"))
+StockMst;
+    // [ default ] interface IDib
+    // [ default, source ] dispinterface _IDibEvents
+
+struct __declspec(uuid("55d0c6e7-0966-11d4-8232-00105a7c4f8c"))
+StockCur;
+    // [ default ] interface IDib
+    // [ default, source ] dispinterface _IDibEvents
+
+struct __declspec(uuid("d6122124-0b4c-11d4-8234-00105a7c4f8c"))
+StockBid;
+    // [ default ] interface IDib
+    // [ default, source ] dispinterface _IDibEvents
+
+struct __declspec(uuid("48096137-0b62-11d4-8234-00105a7c4f8c"))
+StockFrnord;
+    // [ default ] interface IDib
+    // [ default, source ] dispinterface _IDibEvents
+
+struct __declspec(uuid("4809613a-0b62-11d4-8234-00105a7c4f8c"))
+StockJpbid;
+    // [ default ] interface IDib
+    // [ default, source ] dispinterface _IDibEvents
+
+struct __declspec(uuid("4809613f-0b62-11d4-8234-00105a7c4f8c"))
+StockJpbid2;
+    // [ default ] interface IDib
+    // [ default, source ] dispinterface _IDibEvents
+
+struct __declspec(uuid("5b886ba4-0b8e-11d4-8235-00105a7c4f8c"))
+StockCbchk;
+    // [ default ] interface IDib
+    // [ default, source ] dispinterface _IDibEvents
+
+struct __declspec(uuid("02caf55c-0c31-11d4-8236-00105a7c4f8c"))
+StockMember;
+    // [ default ] interface IDib
+    // [ default, source ] dispinterface _IDibEvents
+
+struct __declspec(uuid("02caf560-0c31-11d4-8236-00105a7c4f8c"))
+StockMember1;
+    // [ default ] interface IDib
+    // [ default, source ] dispinterface _IDibEvents
+
+struct __declspec(uuid("7c79b1f6-0e74-11d4-823a-00105a7c4f8c"))
+StockWeek;
+    // [ default ] interface IDib
+    // [ default, source ] dispinterface _IDibEvents
+
+struct __declspec(uuid("8a1d75a5-0f42-11d4-823d-00105a7c4f8c"))
+CbGraph1;
+    // [ default ] interface IDib
+    // [ default, source ] dispinterface _IDibEvents
+
+struct __declspec(uuid("1583ea45-b4d3-4b3a-8018-a0fdf8334619"))
+FutureMst;
+    // [ default ] interface IDib
+    // [ default, source ] dispinterface _IDibEvents
+
+struct __declspec(uuid("8f101465-f973-4601-abf6-7b281a79c93c"))
+FutureCurr;
+    // [ default ] interface IDib
+    // [ default, source ] dispinterface _IDibEvents
+
+struct __declspec(uuid("b28635b1-ff2b-4e03-98cc-427d71aa5ac4"))
+FutureIndexi;
+    // [ default ] interface IDib
+    // [ default, source ] dispinterface _IDibEvents
+
+struct __declspec(uuid("9d5b7ef6-30c3-43f7-b9f5-6ad9a3ce6a26"))
+FutureWide;
+    // [ default ] interface IDib
+    // [ default, source ] dispinterface _IDibEvents
+
+struct __declspec(uuid("8f86c563-8079-47fd-979e-6c4c7d647786"))
+FutureMo1;
+    // [ default ] interface IDib
+    // [ default, source ] dispinterface _IDibEvents
+
+struct __declspec(uuid("b040ff23-27cd-46b2-bdc8-e7e793509c65"))
+OptionMst;
+    // [ default ] interface IDib
+    // [ default, source ] dispinterface _IDibEvents
+
+struct __declspec(uuid("2a90886e-86c7-4e37-94bf-d66fd36426f9"))
+OptionCur;
+    // [ default ] interface IDib
+    // [ default, source ] dispinterface _IDibEvents
+
+struct __declspec(uuid("505b3ed8-392f-482d-a0c4-6d40f9e7ea72"))
+OptionMo;
+    // [ default ] interface IDib
+    // [ default, source ] dispinterface _IDibEvents
+
+struct __declspec(uuid("f39298b4-74d1-4699-ae7d-82c2cc428e25"))
+OptionGreek;
+    // [ default ] interface IDib
+    // [ default, source ] dispinterface _IDibEvents
+
+struct __declspec(uuid("309cff13-ae6e-48bd-8be0-13b75d33d3e7"))
+OptionGen;
+    // [ default ] interface IDib
+    // [ default, source ] dispinterface _IDibEvents
+
+struct __declspec(uuid("0e581b11-5e74-4a79-8609-af117bdb88e0"))
+OptionCallput;
+    // [ default ] interface IDib
+    // [ default, source ] dispinterface _IDibEvents
+
+struct __declspec(uuid("1c95cc46-ddc7-4015-8d06-7028facde801"))
+StockIndexir;
+    // [ default ] interface IDib
+    // [ default, source ] dispinterface _IDibEvents
+
+struct __declspec(uuid("354e2635-a0ab-4511-bcd9-13c187a37c89"))
+StockIndexis;
+    // [ default ] interface IDib
+    // [ default, source ] dispinterface _IDibEvents
+
+struct __declspec(uuid("12a49893-a2e9-42a0-9dd4-c28851e597d0"))
+FutureBid1;
+    // [ default ] interface IDib
+    // [ default, source ] dispinterface _IDibEvents
+
+struct __declspec(uuid("92372a60-c14c-4b8b-a656-1bb5c17f84ac"))
+StockMstm;
+    // [ default ] interface IDib
+    // [ default, source ] dispinterface _IDibEvents
+
+struct __declspec(uuid("a8341025-9d81-467c-8d44-5f569bf37842"))
+FutureIndexh;
+    // [ default ] interface IDib
+    // [ default, source ] dispinterface _IDibEvents
+
+struct __declspec(uuid("1d9e7343-8c92-430a-9c8d-f8c6dcf3d635"))
+StockStu;
+    // [ default ] interface IDib
+    // [ default, source ] dispinterface _IDibEvents
+
+struct __declspec(uuid("cee55bf3-de0b-46b9-ad5e-108d875e54fe"))
+FutureFtu;
+    // [ default ] interface IDib
+    // [ default, source ] dispinterface _IDibEvents
+
+struct __declspec(uuid("70a9c960-fbff-4981-a081-3f323b3a439f"))
+OptionFtu;
+    // [ default ] interface IDib
+    // [ default, source ] dispinterface _IDibEvents
+
+struct __declspec(uuid("1ef6f3ee-f43f-4fec-845a-44d4cf769272"))
+FutureGr1;
+    // [ default ] interface IDib
+    // [ default, source ] dispinterface _IDibEvents
+
+struct __declspec(uuid("65735fe8-5b16-4285-a832-532e5ffc9b38"))
+OptionGr1;
+    // [ default ] interface IDib
+    // [ default, source ] dispinterface _IDibEvents
+
+struct __declspec(uuid("c12d47e0-bacb-47ae-bc6c-4bd5744a8680"))
+CpSvr7225;
+    // [ default ] interface IDib
+    // [ default, source ] dispinterface _IDibEvents
+
+struct __declspec(uuid("44f25c73-57e6-4baa-9369-9b6f42cd5d55"))
+PgAtime8112;
+    // [ default ] interface IDib
+    // [ default, source ] dispinterface _IDibEvents
+
+struct __declspec(uuid("5cbbf6ad-6896-40a2-bc7f-630c274627be"))
+StockAdS;
+    // [ default ] interface IDib
+    // [ default, source ] dispinterface _IDibEvents
+
+struct __declspec(uuid("7630f872-fdf8-4880-be46-c7b912ca5cc1"))
+StockAdR;
+    // [ default ] interface IDib
+    // [ default, source ] dispinterface _IDibEvents
+
+struct __declspec(uuid("72fdaf04-f87b-47e1-9396-0a7c98f4e5c5"))
+CpConclusion;
+    // [ default ] interface IDib
+    // [ default, source ] dispinterface _IDibEvents
+
+struct __declspec(uuid("58172cd3-659d-45c7-8e5e-9c65049c8202"))
+StockAdkS;
+    // [ default ] interface IDib
+    // [ default, source ] dispinterface _IDibEvents
+
+struct __declspec(uuid("0d60b192-f361-4353-8b23-44514911fa6f"))
+StockAdkR;
+    // [ default ] interface IDib
+    // [ default, source ] dispinterface _IDibEvents
+
+struct __declspec(uuid("f33f2a8e-a1f8-40c3-9f0d-8001e409b18a"))
+CpFConclusion;
+    // [ default ] interface IDib
+    // [ default, source ] dispinterface _IDibEvents
+
+struct __declspec(uuid("0d4cdcec-dd27-402b-8036-094cb9d18f3e"))
+FutureWeek1;
+    // [ default ] interface IDib
+    // [ default, source ] dispinterface _IDibEvents
+
+struct __declspec(uuid("137c4125-1323-469d-86bc-962c2c9cac11"))
+OptionBid;
+    // [ default ] interface IDib
+    // [ default, source ] dispinterface _IDibEvents
+
+struct __declspec(uuid("52f1e791-07e5-49dd-adbd-4f59cee7e56d"))
+FutureK200;
+    // [ default ] interface IDib
+    // [ default, source ] dispinterface _IDibEvents
+
+struct __declspec(uuid("b946b892-d57e-4d7d-a8a2-d857ec54c419"))
+OptionWeek;
+    // [ default ] interface IDib
+    // [ default, source ] dispinterface _IDibEvents
+
+struct __declspec(uuid("f68d10e7-feed-4fde-bbaa-d1ff881771ba"))
+OptionInfo;
+    // [ default ] interface IDib
+    // [ default, source ] dispinterface _IDibEvents
+
+struct __declspec(uuid("594bc899-b2df-4c32-83df-6e0aa542b8dc"))
+OptionTV;
+    // [ default ] interface IDib
+    // [ default, source ] dispinterface _IDibEvents
+
+struct __declspec(uuid("1f1e0b94-8a20-4f9e-a89d-53c3e5c1ec56"))
+CpSvr7223;
+    // [ default ] interface IDib
+    // [ default, source ] dispinterface _IDibEvents
+
+struct __declspec(uuid("362648c3-a91f-4bd6-b65c-354fce9fcc5e"))
+CpSvr8092S;
+    // [ default ] interface IDib
+    // [ default, source ] dispinterface _IDibEvents
+
+struct __declspec(uuid("71a629f4-d2a8-4f0c-ad48-b2b6494fd0f8"))
+CpSvr8561;
+    // [ default ] interface IDib
+    // [ default, source ] dispinterface _IDibEvents
+
+struct __declspec(uuid("b76ab425-5d82-4a74-be0f-b5fac0453787"))
+CpSvr8561T;
+    // [ default ] interface IDib
+    // [ default, source ] dispinterface _IDibEvents
+
+struct __declspec(uuid("bcbe0f92-d5a0-44cf-acb1-572e5246f4c3"))
+CpSvr8562;
+    // [ default ] interface IDib
+    // [ default, source ] dispinterface _IDibEvents
+
+struct __declspec(uuid("b40008f5-be02-42d1-af05-0a95713d9f5c"))
+CpSvr8563;
+    // [ default ] interface IDib
+    // [ default, source ] dispinterface _IDibEvents
+
+struct __declspec(uuid("2a04f706-dfcd-4588-9130-ccbc2c6043c8"))
+CpSvr8091;
+    // [ default ] interface IDib
+    // [ default, source ] dispinterface _IDibEvents
+
+struct __declspec(uuid("fa8f5a92-82b3-45a5-957b-f052edce3556"))
+CpSvr8091S;
+    // [ default ] interface IDib
+    // [ default, source ] dispinterface _IDibEvents
+
+struct __declspec(uuid("0d6cdfb5-78ef-472b-807e-6c994fe01830"))
+SoptionWeek;
+    // [ default ] interface IDib
+    // [ default, source ] dispinterface _IDibEvents
+
+struct __declspec(uuid("defa472e-99e2-4355-b2c7-b1894541cc3d"))
+SoptionMst;
+    // [ default ] interface IDib
+    // [ default, source ] dispinterface _IDibEvents
+
+struct __declspec(uuid("cb5d1ffe-52b0-415f-9d97-df8261878a1a"))
+SoptionCur;
+    // [ default ] interface IDib
+    // [ default, source ] dispinterface _IDibEvents
+
+struct __declspec(uuid("b17a779e-1c22-46b9-81c9-f52a92dcbaa2"))
+SoptionBid;
+    // [ default ] interface IDib
+    // [ default, source ] dispinterface _IDibEvents
+
+struct __declspec(uuid("1d98fa00-46a7-410d-beee-378be2f232b4"))
+SoptionCallput;
+    // [ default ] interface IDib
+    // [ default, source ] dispinterface _IDibEvents
+
+struct __declspec(uuid("9d163a76-6432-46d8-ac7e-0f998b7ae283"))
+CpSvr8081;
+    // [ default ] interface IDib
+    // [ default, source ] dispinterface _IDibEvents
+
+struct __declspec(uuid("c375f210-e366-4cb4-9ae2-60d77d306fcf"))
+CpSvr8082;
+    // [ default ] interface IDib
+    // [ default, source ] dispinterface _IDibEvents
+
+struct __declspec(uuid("46570098-ca2d-4cce-a9b0-348728c96814"))
+CpSvr8083;
+    // [ default ] interface IDib
+    // [ default, source ] dispinterface _IDibEvents
+
+struct __declspec(uuid("4bdd0a5c-cbd7-426a-a1b0-cd7bb6da3ef7"))
+CpSvr8111;
+    // [ default ] interface IDib
+    // [ default, source ] dispinterface _IDibEvents
+
+struct __declspec(uuid("2d79a13e-79da-41a2-b565-bd9aed15e84b"))
+CpSvr8111S;
+    // [ default ] interface IDib
+    // [ default, source ] dispinterface _IDibEvents
+
+struct __declspec(uuid("91e94973-c856-4368-9402-e1707ce2146c"))
+CpSvr8111KS;
+    // [ default ] interface IDib
+    // [ default, source ] dispinterface _IDibEvents
+
+struct __declspec(uuid("f17a78b1-7de3-48ac-ab79-588869083989"))
+CpSvr8116;
+    // [ default ] interface IDib
+    // [ default, source ] dispinterface _IDibEvents
+
+struct __declspec(uuid("757b16a4-9a6a-427d-9332-bd5abbaa3083"))
+CpSvr7818;
+    // [ default ] interface IDib
+    // [ default, source ] dispinterface _IDibEvents
+
+struct __declspec(uuid("18457bcd-7ec0-4312-9245-0036dc2ddace"))
+CpSvr7818C;
+    // [ default ] interface IDib
+    // [ default, source ] dispinterface _IDibEvents
+
+struct __declspec(uuid("c2dcc501-49e9-4adb-8353-294fe25e7428"))
+CpSvr7819;
+    // [ default ] interface IDib
+    // [ default, source ] dispinterface _IDibEvents
+
+struct __declspec(uuid("1481aecc-dcc7-4161-9829-91dfdd24e70b"))
+CpSvr7819C;
+    // [ default ] interface IDib
+    // [ default, source ] dispinterface _IDibEvents
+
+struct __declspec(uuid("c517af9d-f297-449f-beca-7b59f1db845b"))
+CpSvr8300;
+    // [ default ] interface IDib
+    // [ default, source ] dispinterface _IDibEvents
+
+struct __declspec(uuid("0049522c-26c0-4bcc-ab77-e7aead1a4620"))
+CpFore8311;
+    // [ default ] interface IDib
+    // [ default, source ] dispinterface _IDibEvents
+
+struct __declspec(uuid("c192c148-edc1-400c-ade8-48778be42737"))
+CpFore8312;
+    // [ default ] interface IDib
+    // [ default, source ] dispinterface _IDibEvents
+
+struct __declspec(uuid("eea6a7d7-1e8c-4d90-8acb-7bd391694978"))
+StockMst2;
+    // [ default ] interface IDib
+    // [ default, source ] dispinterface _IDibEvents
+
+struct __declspec(uuid("1d5575f8-d57a-443e-80e8-f2a26f8fc168"))
+StockOutMst;
+    // [ default ] interface IDib
+    // [ default, source ] dispinterface _IDibEvents
+
+struct __declspec(uuid("a58788cc-6f6d-4287-8194-d1d5ebfc13ce"))
+StockOutCur;
+    // [ default ] interface IDib
+    // [ default, source ] dispinterface _IDibEvents
+
+struct __declspec(uuid("7163f981-6552-49e9-84af-ec1e62fec867"))
+OptionAtm;
+    // [ default ] interface IDib
+    // [ default, source ] dispinterface _IDibEvents
+
+struct __declspec(uuid("76f545b3-cad9-4474-ba39-f67352924174"))
+FutureOptionStat;
+    // [ default ] interface IDib
+    // [ default, source ] dispinterface _IDibEvents
+
+struct __declspec(uuid("2079f79d-798e-4c4d-9a0e-7bac8fe294c3"))
+FutureOptionStatPB;
+    // [ default ] interface IDib
+    // [ default, source ] dispinterface _IDibEvents
+
+struct __declspec(uuid("3116500c-0dc1-4c63-b760-043903a463c5"))
+StockIndexiChart;
+    // [ default ] interface IDib
+    // [ default, source ] dispinterface _IDibEvents
+
+struct __declspec(uuid("4ff1f71f-0d95-46f1-80d2-c62e50d46995"))
+FutOptRest;
+    // [ default ] interface IDib
+    // [ default, source ] dispinterface _IDibEvents
+
+struct __declspec(uuid("a2570bf0-8bf3-4ab8-a4b9-200741a16a11"))
+ExpectIndexR;
+    // [ default ] interface IDib
+    // [ default, source ] dispinterface _IDibEvents
+
+struct __declspec(uuid("484427be-e0c6-45dd-9368-def8db3efc9d"))
+ExpectIndexS;
+    // [ default ] interface IDib
+    // [ default, source ] dispinterface _IDibEvents
+
+struct __declspec(uuid("21123f9d-fffc-49b2-acc1-b89b4ee50a18"))
+FutureCurOnly;
+    // [ default ] interface IDib
+    // [ default, source ] dispinterface _IDibEvents
+
+//
+// Named GUID constants initializations
+//
+
+extern "C" const GUID __declspec(selectany) LIBID_CPDIBLib =
+    {0x859343f1,0x08fd,0x11d4,{0x82,0x31,0x00,0x10,0x5a,0x7c,0x4f,0x8c}};
+extern "C" const GUID __declspec(selectany) IID_IDib =
+    {0x33518a10,0x0931,0x11d4,{0x82,0x31,0x00,0x10,0x5a,0x7c,0x4f,0x8c}};
+extern "C" const GUID __declspec(selectany) DIID__IDibEvents =
+    {0xb8944520,0x09c3,0x11d4,{0x82,0x32,0x00,0x10,0x5a,0x7c,0x4f,0x8c}};
+extern "C" const GUID __declspec(selectany) IID_ICpField =
+    {0x85934404,0x08fd,0x11d4,{0x82,0x31,0x00,0x10,0x5a,0x7c,0x4f,0x8c}};
+extern "C" const GUID __declspec(selectany) IID_ICpFields =
+    {0x55d0c6e4,0x0966,0x11d4,{0x82,0x32,0x00,0x10,0x5a,0x7c,0x4f,0x8c}};
+extern "C" const GUID __declspec(selectany) CLSID_CpField =
+    {0x85934405,0x08fd,0x11d4,{0x82,0x31,0x00,0x10,0x5a,0x7c,0x4f,0x8c}};
+extern "C" const GUID __declspec(selectany) CLSID_CpFields =
+    {0x55d0c6e5,0x0966,0x11d4,{0x82,0x32,0x00,0x10,0x5a,0x7c,0x4f,0x8c}};
+extern "C" const GUID __declspec(selectany) CLSID_StockMst =
+    {0x9ff543e2,0xfb11,0x11d3,{0x82,0x24,0x00,0x10,0x5a,0x7c,0x4f,0x8c}};
+extern "C" const GUID __declspec(selectany) CLSID_StockCur =
+    {0x55d0c6e7,0x0966,0x11d4,{0x82,0x32,0x00,0x10,0x5a,0x7c,0x4f,0x8c}};
+extern "C" const GUID __declspec(selectany) CLSID_StockBid =
+    {0xd6122124,0x0b4c,0x11d4,{0x82,0x34,0x00,0x10,0x5a,0x7c,0x4f,0x8c}};
+extern "C" const GUID __declspec(selectany) CLSID_StockFrnord =
+    {0x48096137,0x0b62,0x11d4,{0x82,0x34,0x00,0x10,0x5a,0x7c,0x4f,0x8c}};
+extern "C" const GUID __declspec(selectany) CLSID_StockJpbid =
+    {0x4809613a,0x0b62,0x11d4,{0x82,0x34,0x00,0x10,0x5a,0x7c,0x4f,0x8c}};
+extern "C" const GUID __declspec(selectany) CLSID_StockJpbid2 =
+    {0x4809613f,0x0b62,0x11d4,{0x82,0x34,0x00,0x10,0x5a,0x7c,0x4f,0x8c}};
+extern "C" const GUID __declspec(selectany) CLSID_StockCbchk =
+    {0x5b886ba4,0x0b8e,0x11d4,{0x82,0x35,0x00,0x10,0x5a,0x7c,0x4f,0x8c}};
+extern "C" const GUID __declspec(selectany) CLSID_StockMember =
+    {0x02caf55c,0x0c31,0x11d4,{0x82,0x36,0x00,0x10,0x5a,0x7c,0x4f,0x8c}};
+extern "C" const GUID __declspec(selectany) CLSID_StockMember1 =
+    {0x02caf560,0x0c31,0x11d4,{0x82,0x36,0x00,0x10,0x5a,0x7c,0x4f,0x8c}};
+extern "C" const GUID __declspec(selectany) CLSID_StockWeek =
+    {0x7c79b1f6,0x0e74,0x11d4,{0x82,0x3a,0x00,0x10,0x5a,0x7c,0x4f,0x8c}};
+extern "C" const GUID __declspec(selectany) CLSID_CbGraph1 =
+    {0x8a1d75a5,0x0f42,0x11d4,{0x82,0x3d,0x00,0x10,0x5a,0x7c,0x4f,0x8c}};
+extern "C" const GUID __declspec(selectany) CLSID_FutureMst =
+    {0x1583ea45,0xb4d3,0x4b3a,{0x80,0x18,0xa0,0xfd,0xf8,0x33,0x46,0x19}};
+extern "C" const GUID __declspec(selectany) CLSID_FutureCurr =
+    {0x8f101465,0xf973,0x4601,{0xab,0xf6,0x7b,0x28,0x1a,0x79,0xc9,0x3c}};
+extern "C" const GUID __declspec(selectany) CLSID_FutureIndexi =
+    {0xb28635b1,0xff2b,0x4e03,{0x98,0xcc,0x42,0x7d,0x71,0xaa,0x5a,0xc4}};
+extern "C" const GUID __declspec(selectany) CLSID_FutureWide =
+    {0x9d5b7ef6,0x30c3,0x43f7,{0xb9,0xf5,0x6a,0xd9,0xa3,0xce,0x6a,0x26}};
+extern "C" const GUID __declspec(selectany) CLSID_FutureMo1 =
+    {0x8f86c563,0x8079,0x47fd,{0x97,0x9e,0x6c,0x4c,0x7d,0x64,0x77,0x86}};
+extern "C" const GUID __declspec(selectany) CLSID_OptionMst =
+    {0xb040ff23,0x27cd,0x46b2,{0xbd,0xc8,0xe7,0xe7,0x93,0x50,0x9c,0x65}};
+extern "C" const GUID __declspec(selectany) CLSID_OptionCur =
+    {0x2a90886e,0x86c7,0x4e37,{0x94,0xbf,0xd6,0x6f,0xd3,0x64,0x26,0xf9}};
+extern "C" const GUID __declspec(selectany) CLSID_OptionMo =
+    {0x505b3ed8,0x392f,0x482d,{0xa0,0xc4,0x6d,0x40,0xf9,0xe7,0xea,0x72}};
+extern "C" const GUID __declspec(selectany) CLSID_OptionGreek =
+    {0xf39298b4,0x74d1,0x4699,{0xae,0x7d,0x82,0xc2,0xcc,0x42,0x8e,0x25}};
+extern "C" const GUID __declspec(selectany) CLSID_OptionGen =
+    {0x309cff13,0xae6e,0x48bd,{0x8b,0xe0,0x13,0xb7,0x5d,0x33,0xd3,0xe7}};
+extern "C" const GUID __declspec(selectany) CLSID_OptionCallput =
+    {0x0e581b11,0x5e74,0x4a79,{0x86,0x09,0xaf,0x11,0x7b,0xdb,0x88,0xe0}};
+extern "C" const GUID __declspec(selectany) CLSID_StockIndexir =
+    {0x1c95cc46,0xddc7,0x4015,{0x8d,0x06,0x70,0x28,0xfa,0xcd,0xe8,0x01}};
+extern "C" const GUID __declspec(selectany) CLSID_StockIndexis =
+    {0x354e2635,0xa0ab,0x4511,{0xbc,0xd9,0x13,0xc1,0x87,0xa3,0x7c,0x89}};
+extern "C" const GUID __declspec(selectany) CLSID_FutureBid1 =
+    {0x12a49893,0xa2e9,0x42a0,{0x9d,0xd4,0xc2,0x88,0x51,0xe5,0x97,0xd0}};
+extern "C" const GUID __declspec(selectany) CLSID_StockMstm =
+    {0x92372a60,0xc14c,0x4b8b,{0xa6,0x56,0x1b,0xb5,0xc1,0x7f,0x84,0xac}};
+extern "C" const GUID __declspec(selectany) CLSID_FutureIndexh =
+    {0xa8341025,0x9d81,0x467c,{0x8d,0x44,0x5f,0x56,0x9b,0xf3,0x78,0x42}};
+extern "C" const GUID __declspec(selectany) CLSID_StockStu =
+    {0x1d9e7343,0x8c92,0x430a,{0x9c,0x8d,0xf8,0xc6,0xdc,0xf3,0xd6,0x35}};
+extern "C" const GUID __declspec(selectany) CLSID_FutureFtu =
+    {0xcee55bf3,0xde0b,0x46b9,{0xad,0x5e,0x10,0x8d,0x87,0x5e,0x54,0xfe}};
+extern "C" const GUID __declspec(selectany) CLSID_OptionFtu =
+    {0x70a9c960,0xfbff,0x4981,{0xa0,0x81,0x3f,0x32,0x3b,0x3a,0x43,0x9f}};
+extern "C" const GUID __declspec(selectany) CLSID_FutureGr1 =
+    {0x1ef6f3ee,0xf43f,0x4fec,{0x84,0x5a,0x44,0xd4,0xcf,0x76,0x92,0x72}};
+extern "C" const GUID __declspec(selectany) CLSID_OptionGr1 =
+    {0x65735fe8,0x5b16,0x4285,{0xa8,0x32,0x53,0x2e,0x5f,0xfc,0x9b,0x38}};
+extern "C" const GUID __declspec(selectany) CLSID_CpSvr7225 =
+    {0xc12d47e0,0xbacb,0x47ae,{0xbc,0x6c,0x4b,0xd5,0x74,0x4a,0x86,0x80}};
+extern "C" const GUID __declspec(selectany) CLSID_PgAtime8112 =
+    {0x44f25c73,0x57e6,0x4baa,{0x93,0x69,0x9b,0x6f,0x42,0xcd,0x5d,0x55}};
+extern "C" const GUID __declspec(selectany) CLSID_StockAdS =
+    {0x5cbbf6ad,0x6896,0x40a2,{0xbc,0x7f,0x63,0x0c,0x27,0x46,0x27,0xbe}};
+extern "C" const GUID __declspec(selectany) CLSID_StockAdR =
+    {0x7630f872,0xfdf8,0x4880,{0xbe,0x46,0xc7,0xb9,0x12,0xca,0x5c,0xc1}};
+extern "C" const GUID __declspec(selectany) CLSID_CpConclusion =
+    {0x72fdaf04,0xf87b,0x47e1,{0x93,0x96,0x0a,0x7c,0x98,0xf4,0xe5,0xc5}};
+extern "C" const GUID __declspec(selectany) CLSID_StockAdkS =
+    {0x58172cd3,0x659d,0x45c7,{0x8e,0x5e,0x9c,0x65,0x04,0x9c,0x82,0x02}};
+extern "C" const GUID __declspec(selectany) CLSID_StockAdkR =
+    {0x0d60b192,0xf361,0x4353,{0x8b,0x23,0x44,0x51,0x49,0x11,0xfa,0x6f}};
+extern "C" const GUID __declspec(selectany) CLSID_CpFConclusion =
+    {0xf33f2a8e,0xa1f8,0x40c3,{0x9f,0x0d,0x80,0x01,0xe4,0x09,0xb1,0x8a}};
+extern "C" const GUID __declspec(selectany) CLSID_FutureWeek1 =
+    {0x0d4cdcec,0xdd27,0x402b,{0x80,0x36,0x09,0x4c,0xb9,0xd1,0x8f,0x3e}};
+extern "C" const GUID __declspec(selectany) CLSID_OptionBid =
+    {0x137c4125,0x1323,0x469d,{0x86,0xbc,0x96,0x2c,0x2c,0x9c,0xac,0x11}};
+extern "C" const GUID __declspec(selectany) CLSID_FutureK200 =
+    {0x52f1e791,0x07e5,0x49dd,{0xad,0xbd,0x4f,0x59,0xce,0xe7,0xe5,0x6d}};
+extern "C" const GUID __declspec(selectany) CLSID_OptionWeek =
+    {0xb946b892,0xd57e,0x4d7d,{0xa8,0xa2,0xd8,0x57,0xec,0x54,0xc4,0x19}};
+extern "C" const GUID __declspec(selectany) CLSID_OptionInfo =
+    {0xf68d10e7,0xfeed,0x4fde,{0xbb,0xaa,0xd1,0xff,0x88,0x17,0x71,0xba}};
+extern "C" const GUID __declspec(selectany) CLSID_OptionTV =
+    {0x594bc899,0xb2df,0x4c32,{0x83,0xdf,0x6e,0x0a,0xa5,0x42,0xb8,0xdc}};
+extern "C" const GUID __declspec(selectany) CLSID_CpSvr7223 =
+    {0x1f1e0b94,0x8a20,0x4f9e,{0xa8,0x9d,0x53,0xc3,0xe5,0xc1,0xec,0x56}};
+extern "C" const GUID __declspec(selectany) CLSID_CpSvr8092S =
+    {0x362648c3,0xa91f,0x4bd6,{0xb6,0x5c,0x35,0x4f,0xce,0x9f,0xcc,0x5e}};
+extern "C" const GUID __declspec(selectany) CLSID_CpSvr8561 =
+    {0x71a629f4,0xd2a8,0x4f0c,{0xad,0x48,0xb2,0xb6,0x49,0x4f,0xd0,0xf8}};
+extern "C" const GUID __declspec(selectany) CLSID_CpSvr8561T =
+    {0xb76ab425,0x5d82,0x4a74,{0xbe,0x0f,0xb5,0xfa,0xc0,0x45,0x37,0x87}};
+extern "C" const GUID __declspec(selectany) CLSID_CpSvr8562 =
+    {0xbcbe0f92,0xd5a0,0x44cf,{0xac,0xb1,0x57,0x2e,0x52,0x46,0xf4,0xc3}};
+extern "C" const GUID __declspec(selectany) CLSID_CpSvr8563 =
+    {0xb40008f5,0xbe02,0x42d1,{0xaf,0x05,0x0a,0x95,0x71,0x3d,0x9f,0x5c}};
+extern "C" const GUID __declspec(selectany) CLSID_CpSvr8091 =
+    {0x2a04f706,0xdfcd,0x4588,{0x91,0x30,0xcc,0xbc,0x2c,0x60,0x43,0xc8}};
+extern "C" const GUID __declspec(selectany) CLSID_CpSvr8091S =
+    {0xfa8f5a92,0x82b3,0x45a5,{0x95,0x7b,0xf0,0x52,0xed,0xce,0x35,0x56}};
+extern "C" const GUID __declspec(selectany) CLSID_SoptionWeek =
+    {0x0d6cdfb5,0x78ef,0x472b,{0x80,0x7e,0x6c,0x99,0x4f,0xe0,0x18,0x30}};
+extern "C" const GUID __declspec(selectany) CLSID_SoptionMst =
+    {0xdefa472e,0x99e2,0x4355,{0xb2,0xc7,0xb1,0x89,0x45,0x41,0xcc,0x3d}};
+extern "C" const GUID __declspec(selectany) CLSID_SoptionCur =
+    {0xcb5d1ffe,0x52b0,0x415f,{0x9d,0x97,0xdf,0x82,0x61,0x87,0x8a,0x1a}};
+extern "C" const GUID __declspec(selectany) CLSID_SoptionBid =
+    {0xb17a779e,0x1c22,0x46b9,{0x81,0xc9,0xf5,0x2a,0x92,0xdc,0xba,0xa2}};
+extern "C" const GUID __declspec(selectany) CLSID_SoptionCallput =
+    {0x1d98fa00,0x46a7,0x410d,{0xbe,0xee,0x37,0x8b,0xe2,0xf2,0x32,0xb4}};
+extern "C" const GUID __declspec(selectany) CLSID_CpSvr8081 =
+    {0x9d163a76,0x6432,0x46d8,{0xac,0x7e,0x0f,0x99,0x8b,0x7a,0xe2,0x83}};
+extern "C" const GUID __declspec(selectany) CLSID_CpSvr8082 =
+    {0xc375f210,0xe366,0x4cb4,{0x9a,0xe2,0x60,0xd7,0x7d,0x30,0x6f,0xcf}};
+extern "C" const GUID __declspec(selectany) CLSID_CpSvr8083 =
+    {0x46570098,0xca2d,0x4cce,{0xa9,0xb0,0x34,0x87,0x28,0xc9,0x68,0x14}};
+extern "C" const GUID __declspec(selectany) CLSID_CpSvr8111 =
+    {0x4bdd0a5c,0xcbd7,0x426a,{0xa1,0xb0,0xcd,0x7b,0xb6,0xda,0x3e,0xf7}};
+extern "C" const GUID __declspec(selectany) CLSID_CpSvr8111S =
+    {0x2d79a13e,0x79da,0x41a2,{0xb5,0x65,0xbd,0x9a,0xed,0x15,0xe8,0x4b}};
+extern "C" const GUID __declspec(selectany) CLSID_CpSvr8111KS =
+    {0x91e94973,0xc856,0x4368,{0x94,0x02,0xe1,0x70,0x7c,0xe2,0x14,0x6c}};
+extern "C" const GUID __declspec(selectany) CLSID_CpSvr8116 =
+    {0xf17a78b1,0x7de3,0x48ac,{0xab,0x79,0x58,0x88,0x69,0x08,0x39,0x89}};
+extern "C" const GUID __declspec(selectany) CLSID_CpSvr7818 =
+    {0x757b16a4,0x9a6a,0x427d,{0x93,0x32,0xbd,0x5a,0xbb,0xaa,0x30,0x83}};
+extern "C" const GUID __declspec(selectany) CLSID_CpSvr7818C =
+    {0x18457bcd,0x7ec0,0x4312,{0x92,0x45,0x00,0x36,0xdc,0x2d,0xda,0xce}};
+extern "C" const GUID __declspec(selectany) CLSID_CpSvr7819 =
+    {0xc2dcc501,0x49e9,0x4adb,{0x83,0x53,0x29,0x4f,0xe2,0x5e,0x74,0x28}};
+extern "C" const GUID __declspec(selectany) CLSID_CpSvr7819C =
+    {0x1481aecc,0xdcc7,0x4161,{0x98,0x29,0x91,0xdf,0xdd,0x24,0xe7,0x0b}};
+extern "C" const GUID __declspec(selectany) CLSID_CpSvr8300 =
+    {0xc517af9d,0xf297,0x449f,{0xbe,0xca,0x7b,0x59,0xf1,0xdb,0x84,0x5b}};
+extern "C" const GUID __declspec(selectany) CLSID_CpFore8311 =
+    {0x0049522c,0x26c0,0x4bcc,{0xab,0x77,0xe7,0xae,0xad,0x1a,0x46,0x20}};
+extern "C" const GUID __declspec(selectany) CLSID_CpFore8312 =
+    {0xc192c148,0xedc1,0x400c,{0xad,0xe8,0x48,0x77,0x8b,0xe4,0x27,0x37}};
+extern "C" const GUID __declspec(selectany) CLSID_StockMst2 =
+    {0xeea6a7d7,0x1e8c,0x4d90,{0x8a,0xcb,0x7b,0xd3,0x91,0x69,0x49,0x78}};
+extern "C" const GUID __declspec(selectany) CLSID_StockOutMst =
+    {0x1d5575f8,0xd57a,0x443e,{0x80,0xe8,0xf2,0xa2,0x6f,0x8f,0xc1,0x68}};
+extern "C" const GUID __declspec(selectany) CLSID_StockOutCur =
+    {0xa58788cc,0x6f6d,0x4287,{0x81,0x94,0xd1,0xd5,0xeb,0xfc,0x13,0xce}};
+extern "C" const GUID __declspec(selectany) CLSID_OptionAtm =
+    {0x7163f981,0x6552,0x49e9,{0x84,0xaf,0xec,0x1e,0x62,0xfe,0xc8,0x67}};
+extern "C" const GUID __declspec(selectany) CLSID_FutureOptionStat =
+    {0x76f545b3,0xcad9,0x4474,{0xba,0x39,0xf6,0x73,0x52,0x92,0x41,0x74}};
+extern "C" const GUID __declspec(selectany) CLSID_FutureOptionStatPB =
+    {0x2079f79d,0x798e,0x4c4d,{0x9a,0x0e,0x7b,0xac,0x8f,0xe2,0x94,0xc3}};
+extern "C" const GUID __declspec(selectany) CLSID_StockIndexiChart =
+    {0x3116500c,0x0dc1,0x4c63,{0xb7,0x60,0x04,0x39,0x03,0xa4,0x63,0xc5}};
+extern "C" const GUID __declspec(selectany) CLSID_FutOptRest =
+    {0x4ff1f71f,0x0d95,0x46f1,{0x80,0xd2,0xc6,0x2e,0x50,0xd4,0x69,0x95}};
+extern "C" const GUID __declspec(selectany) CLSID_ExpectIndexR =
+    {0xa2570bf0,0x8bf3,0x4ab8,{0xa4,0xb9,0x20,0x07,0x41,0xa1,0x6a,0x11}};
+extern "C" const GUID __declspec(selectany) CLSID_ExpectIndexS =
+    {0x484427be,0xe0c6,0x45dd,{0x93,0x68,0xde,0xf8,0xdb,0x3e,0xfc,0x9d}};
+extern "C" const GUID __declspec(selectany) CLSID_FutureCurOnly =
+    {0x21123f9d,0xfffc,0x49b2,{0xac,0xc1,0xb8,0x9b,0x4e,0xe5,0x0a,0x18}};
+
+//
+// Wrapper method implementations
+//
+
+#include "j:\projects\portfoliomanager\90.프로토타입\stockcurdlg\release\cpdib.tli"
+
+} // namespace CPDIBLib
+
+#pragma pack(pop)

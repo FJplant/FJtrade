@@ -1,0 +1,1011 @@
+﻿// Created by Microsoft (R) C/C++ Compiler Version 15.00.30729.01 (947ad6b9).
+//
+// j:\projects\portfoliomanager\90.프로토타입\stockcurdlg\debug\cputil.tlh
+//
+// C++ source equivalent of Win32 type library C:\app\DAISHIN\CYBOSPLUS\cputil.dll
+// compiler-generated file created 08/20/11 at 04:06:17 - DO NOT EDIT!
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+namespace CPUTILLib {
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("2da9c35c-fe59-4a32-a942-325ee8a6f659"))
+/* LIBID */ __CPUTILLib;
+struct __declspec(uuid("363af9f5-0612-4e75-a563-211851b45a16"))
+/* dual interface */ ICpUserInfo;
+struct /* coclass */ CpUserInfo;
+struct /* coclass */ CpStockCode;
+struct __declspec(uuid("081aaeaa-dfaf-4b7f-a53a-0d1e4ac58584"))
+/* dual interface */ ICpStockCode;
+struct __declspec(uuid("fddf6f98-b0ae-4b86-8c62-cc4469075f65"))
+/* dual interface */ ICpFutureCode;
+struct /* coclass */ CpFutureCode;
+struct /* coclass */ CpKFutureCode;
+struct __declspec(uuid("312ade72-2c5c-4084-adce-9bbbafefad56"))
+/* dual interface */ ICpOptionCode;
+struct /* coclass */ CpOptionCode;
+struct __declspec(uuid("b41fb07e-3901-4ff8-9d66-1c06d50ec5fc"))
+/* dual interface */ ICpSoptionCode;
+struct /* coclass */ CpSoptionCode;
+enum __MIDL___MIDL_itf_CpUtil_0001_0068_0001;
+struct __declspec(uuid("3722b490-a340-45c5-bda5-3c736ddeb423"))
+/* dual interface */ ICpCybos;
+struct __declspec(uuid("17f70631-56e5-40fc-b94f-44add3a850b1"))
+/* dispinterface */ _ICpCybosEvents;
+struct /* coclass */ CpCybos;
+enum __MIDL___MIDL_itf_CpUtil_0001_0070_0001;
+enum __MIDL___MIDL_itf_CpUtil_0001_0070_0002;
+enum __MIDL___MIDL_itf_CpUtil_0001_0070_0003;
+enum __MIDL___MIDL_itf_CpUtil_0001_0070_0004;
+enum __MIDL___MIDL_itf_CpUtil_0001_0070_0005;
+enum __MIDL___MIDL_itf_CpUtil_0001_0070_0006;
+enum __MIDL___MIDL_itf_CpUtil_0001_0070_0007;
+enum __MIDL___MIDL_itf_CpUtil_0001_0070_0008;
+enum __MIDL___MIDL_itf_CpUtil_0001_0070_0009;
+enum __MIDL___MIDL_itf_CpUtil_0001_0070_0010;
+struct __declspec(uuid("6893a6d3-03fd-46eb-bb0e-28a22d3aec9b"))
+/* dual interface */ ICpCodeMgr;
+struct /* coclass */ CpCodeMgr;
+enum __MIDL___MIDL_itf_CpUtil_0001_0071_0001;
+struct __declspec(uuid("a162f0d1-894a-48d1-bdf4-e8589ea7607b"))
+/* dual interface */ ICpElwCode;
+struct /* coclass */ CpElwCode;
+enum __MIDL___MIDL_itf_CpUtil_0001_0072_0001;
+struct __declspec(uuid("e1698433-8c49-4075-bdf8-0c0a23c61a2a"))
+/* dual interface */ ICpUsCode;
+struct /* coclass */ CpUsCode;
+enum __MIDL___MIDL_itf_CpUtil_0001_0073_0001;
+enum __MIDL___MIDL_itf_CpUtil_0001_0073_0002;
+struct __declspec(uuid("ae72a9fd-e459-4678-b8ca-7417bef26142"))
+/* dual interface */ ICpCalcOptGreeks;
+struct /* coclass */ CpCalcOptGreeks;
+typedef enum __MIDL___MIDL_itf_CpUtil_0001_0068_0001 LIMIT_TYPE;
+typedef enum __MIDL___MIDL_itf_CpUtil_0001_0070_0001 CPE_MARKET_KIND;
+typedef enum __MIDL___MIDL_itf_CpUtil_0001_0070_0002 CPE_CONTROL_KIND;
+typedef enum __MIDL___MIDL_itf_CpUtil_0001_0070_0003 CPE_SUPERVISION_KIND;
+typedef enum __MIDL___MIDL_itf_CpUtil_0001_0070_0004 CPE_CAPITAL_SIZE;
+typedef enum __MIDL___MIDL_itf_CpUtil_0001_0070_0005 CPE_KOSPI200_KIND;
+typedef enum __MIDL___MIDL_itf_CpUtil_0001_0070_0006 CPE_STOCK_STATUS_KIND;
+typedef enum __MIDL___MIDL_itf_CpUtil_0001_0070_0007 CPE_KSE_SECTION_KIND;
+typedef enum __MIDL___MIDL_itf_CpUtil_0001_0070_0008 CPE_KSE_SECTION_KIND_OLD;
+typedef enum __MIDL___MIDL_itf_CpUtil_0001_0070_0009 CPE_LAC_KIND;
+typedef enum __MIDL___MIDL_itf_CpUtil_0001_0070_0010 CPE_ECT_PARPRICE_CHANGE;
+typedef enum __MIDL___MIDL_itf_CpUtil_0001_0071_0001 CPE_ECT_ELW_RIGHT_TYPE;
+typedef enum __MIDL___MIDL_itf_CpUtil_0001_0072_0001 USTYPE;
+typedef enum __MIDL___MIDL_itf_CpUtil_0001_0073_0001 CALLPUT_TYPE;
+typedef enum __MIDL___MIDL_itf_CpUtil_0001_0073_0002 VOLATILITY_TYPE;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(ICpUserInfo, __uuidof(ICpUserInfo));
+_COM_SMARTPTR_TYPEDEF(ICpStockCode, __uuidof(ICpStockCode));
+_COM_SMARTPTR_TYPEDEF(ICpFutureCode, __uuidof(ICpFutureCode));
+_COM_SMARTPTR_TYPEDEF(ICpOptionCode, __uuidof(ICpOptionCode));
+_COM_SMARTPTR_TYPEDEF(ICpSoptionCode, __uuidof(ICpSoptionCode));
+_COM_SMARTPTR_TYPEDEF(ICpCybos, __uuidof(ICpCybos));
+_COM_SMARTPTR_TYPEDEF(_ICpCybosEvents, __uuidof(_ICpCybosEvents));
+_COM_SMARTPTR_TYPEDEF(ICpCodeMgr, __uuidof(ICpCodeMgr));
+_COM_SMARTPTR_TYPEDEF(ICpElwCode, __uuidof(ICpElwCode));
+_COM_SMARTPTR_TYPEDEF(ICpUsCode, __uuidof(ICpUsCode));
+_COM_SMARTPTR_TYPEDEF(ICpCalcOptGreeks, __uuidof(ICpCalcOptGreeks));
+
+//
+// Type library items
+//
+
+struct __declspec(uuid("363af9f5-0612-4e75-a563-211851b45a16"))
+ICpUserInfo : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetComID))
+    _bstr_t ComID;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    _bstr_t GetComID ( );
+    long VerifyUserInfo (
+        _bstr_t SocialNo,
+        _bstr_t UserName );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_ComID (
+        /*[out,retval]*/ BSTR * pRet ) = 0;
+      virtual HRESULT __stdcall raw_VerifyUserInfo (
+        /*[in]*/ BSTR SocialNo,
+        /*[in]*/ BSTR UserName,
+        /*[out,retval]*/ long * pRet ) = 0;
+};
+
+struct __declspec(uuid("db656203-951a-4d6a-972e-0138debd6648"))
+CpUserInfo;
+    // [ default ] interface ICpUserInfo
+
+struct __declspec(uuid("2297f381-ffb1-45c6-aa80-4c6913f45e91"))
+CpStockCode;
+    // [ default ] interface ICpStockCode
+
+struct __declspec(uuid("081aaeaa-dfaf-4b7f-a53a-0d1e4ac58584"))
+ICpStockCode : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    _bstr_t CodeToName (
+        _bstr_t code );
+    _bstr_t FullCodeToName (
+        _bstr_t code );
+    short GetCount ( );
+    _variant_t GetData (
+        short type,
+        short index );
+    _bstr_t CodeToFullCode (
+        _bstr_t code );
+    _bstr_t FullCodeToCode (
+        _bstr_t code );
+    _bstr_t NameToCode (
+        _bstr_t name );
+    long CodeToIndex (
+        _bstr_t code );
+    long GetPriceUnit (
+        _bstr_t code,
+        long basePrice,
+        VARIANT_BOOL directionUp );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_CodeToName (
+        /*[in]*/ BSTR code,
+        /*[out,retval]*/ BSTR * pRet ) = 0;
+      virtual HRESULT __stdcall raw_FullCodeToName (
+        /*[in]*/ BSTR code,
+        /*[out,retval]*/ BSTR * pRet ) = 0;
+      virtual HRESULT __stdcall raw_GetCount (
+        /*[out,retval]*/ short * pRet ) = 0;
+      virtual HRESULT __stdcall raw_GetData (
+        /*[in]*/ short type,
+        /*[in]*/ short index,
+        /*[out,retval]*/ VARIANT * pVal ) = 0;
+      virtual HRESULT __stdcall raw_CodeToFullCode (
+        /*[in]*/ BSTR code,
+        /*[out,retval]*/ BSTR * pRet ) = 0;
+      virtual HRESULT __stdcall raw_FullCodeToCode (
+        /*[in]*/ BSTR code,
+        /*[out,retval]*/ BSTR * pRet ) = 0;
+      virtual HRESULT __stdcall raw_NameToCode (
+        /*[in]*/ BSTR name,
+        /*[out,retval]*/ BSTR * pRet ) = 0;
+      virtual HRESULT __stdcall raw_CodeToIndex (
+        /*[in]*/ BSTR code,
+        /*[out,retval]*/ long * pRet ) = 0;
+      virtual HRESULT __stdcall raw_GetPriceUnit (
+        /*[in]*/ BSTR code,
+        /*[in]*/ long basePrice,
+        /*[in]*/ VARIANT_BOOL directionUp,
+        /*[out,retval]*/ long * pRet ) = 0;
+};
+
+struct __declspec(uuid("fddf6f98-b0ae-4b86-8c62-cc4469075f65"))
+ICpFutureCode : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    short GetCount ( );
+    _variant_t GetData (
+        short type,
+        short index );
+    _bstr_t CodeToName (
+        _bstr_t code );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_GetCount (
+        /*[out,retval]*/ short * pRet ) = 0;
+      virtual HRESULT __stdcall raw_GetData (
+        /*[in]*/ short type,
+        /*[in]*/ short index,
+        /*[out,retval]*/ VARIANT * pVal ) = 0;
+      virtual HRESULT __stdcall raw_CodeToName (
+        BSTR code,
+        /*[out,retval]*/ BSTR * pRet ) = 0;
+};
+
+struct __declspec(uuid("15a37730-a973-47d7-9058-2686097642f8"))
+CpFutureCode;
+    // [ default ] interface ICpFutureCode
+
+struct __declspec(uuid("e6bff246-8b47-4833-ae20-f853bdaa3248"))
+CpKFutureCode;
+    // [ default ] interface ICpFutureCode
+
+struct __declspec(uuid("312ade72-2c5c-4084-adce-9bbbafefad56"))
+ICpOptionCode : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    short GetCount ( );
+    _variant_t GetData (
+        short type,
+        short index );
+    _bstr_t CodeToName (
+        _bstr_t code );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_GetCount (
+        /*[out,retval]*/ short * pRet ) = 0;
+      virtual HRESULT __stdcall raw_GetData (
+        /*[in]*/ short type,
+        /*[in]*/ short index,
+        /*[out,retval]*/ VARIANT * pVal ) = 0;
+      virtual HRESULT __stdcall raw_CodeToName (
+        BSTR code,
+        /*[out,retval]*/ BSTR * pRet ) = 0;
+};
+
+struct __declspec(uuid("7566755f-36ad-43ef-b388-4cc62ca94279"))
+CpOptionCode;
+    // [ default ] interface ICpOptionCode
+
+struct __declspec(uuid("b41fb07e-3901-4ff8-9d66-1c06d50ec5fc"))
+ICpSoptionCode : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    short GetCount ( );
+    _variant_t GetData (
+        short type,
+        short index );
+    _bstr_t CodeToName (
+        _bstr_t code );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_GetCount (
+        /*[out,retval]*/ short * pRet ) = 0;
+      virtual HRESULT __stdcall raw_GetData (
+        /*[in]*/ short type,
+        /*[in]*/ short index,
+        /*[out,retval]*/ VARIANT * pVal ) = 0;
+      virtual HRESULT __stdcall raw_CodeToName (
+        BSTR code,
+        /*[out,retval]*/ BSTR * pRet ) = 0;
+};
+
+struct __declspec(uuid("f23d75c0-a0ac-4988-865c-54b3b9d009b2"))
+CpSoptionCode;
+    // [ default ] interface ICpSoptionCode
+
+enum __MIDL___MIDL_itf_CpUtil_0001_0068_0001
+{
+    LT_TRADE_REQUEST = 0,
+    LT_NONTRADE_REQUEST = 1,
+    LT_SUBSCRIBE = 2
+};
+
+struct __declspec(uuid("3722b490-a340-45c5-bda5-3c736ddeb423"))
+ICpCybos : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetIsConnect))
+    long IsConnect;
+    __declspec(property(get=GetServerType))
+    short ServerType;
+    __declspec(property(get=GetLimitRequestRemainTime))
+    long LimitRequestRemainTime;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    long GetIsConnect ( );
+    short GetServerType ( );
+    long GetLimitRequestRemainTime ( );
+    long GetLimitRemainCount (
+        LIMIT_TYPE limitType );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_IsConnect (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_ServerType (
+        /*[out,retval]*/ short * pVal ) = 0;
+      virtual HRESULT __stdcall get_LimitRequestRemainTime (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall raw_GetLimitRemainCount (
+        /*[in]*/ LIMIT_TYPE limitType,
+        /*[out,retval]*/ long * pVal ) = 0;
+};
+
+struct __declspec(uuid("17f70631-56e5-40fc-b94f-44add3a850b1"))
+_ICpCybosEvents : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    // Methods:
+    HRESULT OnDisconnect ( );
+};
+
+struct __declspec(uuid("19a11288-2b28-45c4-8cd4-3a12b60c3bd7"))
+CpCybos;
+    // [ default ] interface ICpCybos
+    // [ default, source ] dispinterface _ICpCybosEvents
+
+enum __MIDL___MIDL_itf_CpUtil_0001_0070_0001
+{
+    CPC_MARKET_NULL = 0,
+    CPC_MARKET_KOSPI = 1,
+    CPC_MARKET_KOSDAQ = 2,
+    CPC_MARKET_FREEBOARD = 3,
+    CPC_MARKET_KRX = 4
+};
+
+enum __MIDL___MIDL_itf_CpUtil_0001_0070_0002
+{
+    CPC_CONTROL_NONE = 0,
+    CPC_CONTROL_ATTENTION = 1,
+    CPC_CONTROL_WARNING = 2,
+    CPC_CONTROL_DANGER_NOTICE = 3,
+    CPC_CONTROL_DANGER = 4
+};
+
+enum __MIDL___MIDL_itf_CpUtil_0001_0070_0003
+{
+    CPC_SUPERVISION_NONE = 0,
+    CPC_SUPERVISION_NORMAL = 1
+};
+
+enum __MIDL___MIDL_itf_CpUtil_0001_0070_0004
+{
+    CPC_CAPITAL_NULL = 0,
+    CPC_CAPITAL_LARGE = 1,
+    CPC_CAPITAL_MIDDLE = 2,
+    CPC_CAPITAL_SMALL = 3
+};
+
+enum __MIDL___MIDL_itf_CpUtil_0001_0070_0005
+{
+    CPC_KOSPI200_NONE = 0,
+    CPC_KOSPI200_MANUFACTURE = 1,
+    CPC_KOSPI200_TELECOMMUNICATION = 2,
+    CPC_KOSPI200_CONSTRUCT = 3,
+    CPC_KOSPI200_CURRENCY = 4,
+    CPC_KOSPI200_FINANCE = 5
+};
+
+enum __MIDL___MIDL_itf_CpUtil_0001_0070_0006
+{
+    CPC_STOCK_STATUS_NORMAL = 0,
+    CPC_STOCK_STATUS_STOP = 1,
+    CPC_STOCK_STATUS_BREAK = 2
+};
+
+enum __MIDL___MIDL_itf_CpUtil_0001_0070_0007
+{
+    CPC_KSE_SECTION_KIND_NULL = 0,
+    CPC_KSE_SECTION_KIND_ST = 1,
+    CPC_KSE_SECTION_KIND_MF = 2,
+    CPC_KSE_SECTION_KIND_RT = 3,
+    CPC_KSE_SECTION_KIND_SC = 4,
+    CPC_KSE_SECTION_KIND_IF = 5,
+    CPC_KSE_SECTION_KIND_DR = 6,
+    CPC_KSE_SECTION_KIND_SW = 7,
+    CPC_KSE_SECTION_KIND_SR = 8,
+    CPC_KSE_SECTION_KIND_ELW = 9,
+    CPC_KSE_SECTION_KIND_ETF = 10,
+    CPC_KSE_SECTION_KIND_BC = 11,
+    CPC_KSE_SECTION_KIND_FETF = 12,
+    CPC_KSE_SECTION_KIND_FOREIGN = 13,
+    CPC_KSE_SECTION_KIND_FU = 14,
+    CPC_KSE_SECTION_KIND_OP = 15
+};
+
+enum __MIDL___MIDL_itf_CpUtil_0001_0070_0008
+{
+    CPC_KSE_SECTION_NULL = 0,
+    CPC_KSE_SECTION_1 = 1,
+    CPC_KSE_SECTION_2 = 2,
+    CPC_KSE_SECTION_DR = 3,
+    CPC_KSE_SECTION_IC = 4,
+    CPC_KSE_SECTION_WR = 5,
+    CPC_KSE_SECTION_REITS = 6,
+    CPC_KSE_SECTION_RIGHT = 7,
+    CPC_KSE_SECTION_ETF = 8,
+    CPC_KSE_SECTION_BC = 9,
+    CPC_KSE_SECTION_SIC = 10,
+    CPC_KSE_SECTION_ELW = 11,
+    CPC_KSE_SECTION_INFRA = 12,
+    CPC_KSE_SECTION_FOREIGN_ETF = 13,
+    CPC_KSE_SECTION_FOREIGN = 14
+};
+
+enum __MIDL___MIDL_itf_CpUtil_0001_0070_0009
+{
+    CPC_LAC_NORMAL = 0,
+    CPC_LAC_EX_RIGHTS = 1,
+    CPC_LAC_EX_DIVIDEND = 2,
+    CPC_LAC_EX_DISTRI_DIVIDEND = 3,
+    CPC_LAC_EX_RIGHTS_DIVIDEND = 4,
+    CPC_LAC_INTERIM_DIVIDEND = 5,
+    CPC_LAC_EX_RIGHTS_INTERIM_DIVIDEND = 6,
+    CPC_LAC_PAR_DIVIDE = 7,
+    CPC_LAC_PAR_MERGE = 8,
+    CPC_LAC_REDUCTION = 9,
+    CPC_LAC_MERGE = 10,
+    CPC_LAC_ETC = 99
+};
+
+enum __MIDL___MIDL_itf_CpUtil_0001_0070_0010
+{
+    CPC_PARPRICE_CHANGE_NONE = 0,
+    CPC_PARPRICE_CHANGE_DIVIDE = 1,
+    CPC_PARPRICE_CHANGE_MERGE = 2,
+    CPC_PARPRICE_CHANGE_ETC = 99
+};
+
+struct __declspec(uuid("6893a6d3-03fd-46eb-bb0e-28a22d3aec9b"))
+ICpCodeMgr : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    _variant_t GetGroupCodeList (
+        long GroupCode );
+    _bstr_t CodeToName (
+        _bstr_t code );
+    _variant_t GetUsCodeList (
+        short type );
+    _bstr_t GetUsCodeName (
+        _bstr_t code );
+    int GetStockMarginRate (
+        _bstr_t code );
+    int GetStockMemeMin (
+        _bstr_t code );
+    _variant_t GetStockElwBasketCodeList (
+        _bstr_t bstrCode );
+    _variant_t GetStockElwBasketCompList (
+        _bstr_t bstrCode );
+    short GetMarketStartTime ( );
+    short GetMarketEndTime ( );
+    _bstr_t GetStockIndustryCode (
+        _bstr_t bstrCode );
+    CPE_MARKET_KIND GetStockMarketKind (
+        _bstr_t bstrCode );
+    CPE_CONTROL_KIND GetStockControlKind (
+        _bstr_t bstrCode );
+    CPE_SUPERVISION_KIND GetStockSupervisionKind (
+        _bstr_t bstrCode );
+    CPE_CAPITAL_SIZE GetStockCapital (
+        _bstr_t bstrCode );
+    int GetStockFiscalMonth (
+        _bstr_t bstrCode );
+    int GetStockGroupCode (
+        _bstr_t bstrCode );
+    CPE_KOSPI200_KIND GetStockKospi200Kind (
+        _bstr_t bstrCode );
+    CPE_STOCK_STATUS_KIND GetStockStatusKind (
+        _bstr_t bstrCode );
+    _variant_t GetGroupList ( );
+    _bstr_t GetGroupName (
+        _bstr_t bstrCode );
+    _variant_t GetIndustryList ( );
+    _variant_t GetKrxIndustryList ( );
+    _bstr_t GetIndustryName (
+        _bstr_t bstrCode );
+    _variant_t GetMemberList ( );
+    _bstr_t GetMemberName (
+        _bstr_t bstrCode );
+    _variant_t GetKosdaqIndustry1List ( );
+    _variant_t GetKosdaqIndustry2List ( );
+    _variant_t GetStockListByMarket (
+        CPE_MARKET_KIND MarketKind );
+    CPE_KSE_SECTION_KIND GetStockSectionKind (
+        _bstr_t bstrCode );
+    CPE_LAC_KIND GetStockLacKind (
+        _bstr_t bstrCode );
+    _bstr_t GetStockCodeByName (
+        _bstr_t bstrName );
+    long GetStockListedDate (
+        _bstr_t bstrName );
+    long GetStockMaxPrice (
+        _bstr_t bstrName );
+    long GetStockMinPrice (
+        _bstr_t bstrName );
+    long GetStockParPrice (
+        _bstr_t bstrName );
+    long GetStockStdPrice (
+        _bstr_t bstrName );
+    long GetStockYdOpenPrice (
+        _bstr_t bstrName );
+    long GetStockYdHighPrice (
+        _bstr_t bstrName );
+    long GetStockYdLowPrice (
+        _bstr_t bstrName );
+    long GetStockYdClosePrice (
+        _bstr_t bstrName );
+    CPE_ECT_PARPRICE_CHANGE GetStockParPriceChageType (
+        _bstr_t bstrName );
+    long IsStockCreditEnable (
+        _bstr_t bstrName );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_GetGroupCodeList (
+        long GroupCode,
+        /*[out,retval]*/ VARIANT * pRetVal ) = 0;
+      virtual HRESULT __stdcall raw_CodeToName (
+        /*[in]*/ BSTR code,
+        /*[out,retval]*/ BSTR * pRet ) = 0;
+      virtual HRESULT __stdcall raw_GetUsCodeList (
+        /*[in]*/ short type,
+        /*[out,retval]*/ VARIANT * pRetVal ) = 0;
+      virtual HRESULT __stdcall raw_GetUsCodeName (
+        /*[in]*/ BSTR code,
+        /*[out,retval]*/ BSTR * pRet ) = 0;
+      virtual HRESULT __stdcall raw_GetStockMarginRate (
+        /*[in]*/ BSTR code,
+        /*[out,retval]*/ int * pRet ) = 0;
+      virtual HRESULT __stdcall raw_GetStockMemeMin (
+        /*[in]*/ BSTR code,
+        /*[out,retval]*/ int * pRet ) = 0;
+      virtual HRESULT __stdcall raw_GetStockElwBasketCodeList (
+        /*[in]*/ BSTR bstrCode,
+        /*[out,retval]*/ VARIANT * pRet ) = 0;
+      virtual HRESULT __stdcall raw_GetStockElwBasketCompList (
+        /*[in]*/ BSTR bstrCode,
+        /*[out,retval]*/ VARIANT * pRet ) = 0;
+      virtual HRESULT __stdcall raw_GetMarketStartTime (
+        /*[out,retval]*/ short * pRet ) = 0;
+      virtual HRESULT __stdcall raw_GetMarketEndTime (
+        /*[out,retval]*/ short * pRet ) = 0;
+      virtual HRESULT __stdcall raw_GetStockIndustryCode (
+        /*[in]*/ BSTR bstrCode,
+        /*[out,retval]*/ BSTR * pIndustry ) = 0;
+      virtual HRESULT __stdcall raw_GetStockMarketKind (
+        /*[in]*/ BSTR bstrCode,
+        /*[out,retval]*/ CPE_MARKET_KIND * pKind ) = 0;
+      virtual HRESULT __stdcall raw_GetStockControlKind (
+        /*[in]*/ BSTR bstrCode,
+        /*[out,retval]*/ CPE_CONTROL_KIND * pKind ) = 0;
+      virtual HRESULT __stdcall raw_GetStockSupervisionKind (
+        /*[in]*/ BSTR bstrCode,
+        /*[out,retval]*/ CPE_SUPERVISION_KIND * pKind ) = 0;
+      virtual HRESULT __stdcall raw_GetStockCapital (
+        /*[in]*/ BSTR bstrCode,
+        /*[out,retval]*/ CPE_CAPITAL_SIZE * pKind ) = 0;
+      virtual HRESULT __stdcall raw_GetStockFiscalMonth (
+        /*[in]*/ BSTR bstrCode,
+        /*[out,retval]*/ int * pMonth ) = 0;
+      virtual HRESULT __stdcall raw_GetStockGroupCode (
+        /*[in]*/ BSTR bstrCode,
+        /*[out,retval]*/ int * pGroup ) = 0;
+      virtual HRESULT __stdcall raw_GetStockKospi200Kind (
+        /*[in]*/ BSTR bstrCode,
+        /*[out,retval]*/ CPE_KOSPI200_KIND * pKind ) = 0;
+      virtual HRESULT __stdcall raw_GetStockStatusKind (
+        /*[in]*/ BSTR bstrCode,
+        /*[out,retval]*/ CPE_STOCK_STATUS_KIND * pKind ) = 0;
+      virtual HRESULT __stdcall raw_GetGroupList (
+        /*[out,retval]*/ VARIANT * pRetVal ) = 0;
+      virtual HRESULT __stdcall raw_GetGroupName (
+        /*[in]*/ BSTR bstrCode,
+        /*[out,retval]*/ BSTR * pName ) = 0;
+      virtual HRESULT __stdcall raw_GetIndustryList (
+        /*[out,retval]*/ VARIANT * pRetVal ) = 0;
+      virtual HRESULT __stdcall raw_GetKrxIndustryList (
+        /*[out,retval]*/ VARIANT * pRetVal ) = 0;
+      virtual HRESULT __stdcall raw_GetIndustryName (
+        /*[in]*/ BSTR bstrCode,
+        /*[out,retval]*/ BSTR * pName ) = 0;
+      virtual HRESULT __stdcall raw_GetMemberList (
+        /*[out,retval]*/ VARIANT * pRetVal ) = 0;
+      virtual HRESULT __stdcall raw_GetMemberName (
+        /*[in]*/ BSTR bstrCode,
+        /*[out,retval]*/ BSTR * pName ) = 0;
+      virtual HRESULT __stdcall raw_GetKosdaqIndustry1List (
+        /*[out,retval]*/ VARIANT * pRetVal ) = 0;
+      virtual HRESULT __stdcall raw_GetKosdaqIndustry2List (
+        /*[out,retval]*/ VARIANT * pRetVal ) = 0;
+      virtual HRESULT __stdcall raw_GetStockListByMarket (
+        /*[in]*/ CPE_MARKET_KIND MarketKind,
+        /*[out,retval]*/ VARIANT * pRetVal ) = 0;
+      virtual HRESULT __stdcall raw_GetStockSectionKind (
+        /*[in]*/ BSTR bstrCode,
+        /*[out,retval]*/ CPE_KSE_SECTION_KIND * pKind ) = 0;
+      virtual HRESULT __stdcall raw_GetStockLacKind (
+        /*[in]*/ BSTR bstrCode,
+        /*[out,retval]*/ CPE_LAC_KIND * pKind ) = 0;
+      virtual HRESULT __stdcall raw_GetStockCodeByName (
+        /*[in]*/ BSTR bstrName,
+        /*[out,retval]*/ BSTR * pRet ) = 0;
+      virtual HRESULT __stdcall raw_GetStockListedDate (
+        /*[in]*/ BSTR bstrName,
+        /*[out,retval]*/ long * pRet ) = 0;
+      virtual HRESULT __stdcall raw_GetStockMaxPrice (
+        /*[in]*/ BSTR bstrName,
+        /*[out,retval]*/ long * pRet ) = 0;
+      virtual HRESULT __stdcall raw_GetStockMinPrice (
+        /*[in]*/ BSTR bstrName,
+        /*[out,retval]*/ long * pRet ) = 0;
+      virtual HRESULT __stdcall raw_GetStockParPrice (
+        /*[in]*/ BSTR bstrName,
+        /*[out,retval]*/ long * pRet ) = 0;
+      virtual HRESULT __stdcall raw_GetStockStdPrice (
+        /*[in]*/ BSTR bstrName,
+        /*[out,retval]*/ long * pRet ) = 0;
+      virtual HRESULT __stdcall raw_GetStockYdOpenPrice (
+        /*[in]*/ BSTR bstrName,
+        /*[out,retval]*/ long * pRet ) = 0;
+      virtual HRESULT __stdcall raw_GetStockYdHighPrice (
+        /*[in]*/ BSTR bstrName,
+        /*[out,retval]*/ long * pRet ) = 0;
+      virtual HRESULT __stdcall raw_GetStockYdLowPrice (
+        /*[in]*/ BSTR bstrName,
+        /*[out,retval]*/ long * pRet ) = 0;
+      virtual HRESULT __stdcall raw_GetStockYdClosePrice (
+        /*[in]*/ BSTR bstrName,
+        /*[out,retval]*/ long * pRet ) = 0;
+      virtual HRESULT __stdcall raw_GetStockParPriceChageType (
+        /*[in]*/ BSTR bstrName,
+        /*[out,retval]*/ CPE_ECT_PARPRICE_CHANGE * pRet ) = 0;
+      virtual HRESULT __stdcall raw_IsStockCreditEnable (
+        /*[in]*/ BSTR bstrName,
+        /*[out,retval]*/ long * pRet ) = 0;
+};
+
+struct __declspec(uuid("995b5abe-ed4b-4d04-b46d-6238ab66ea71"))
+CpCodeMgr;
+    // [ default ] interface ICpCodeMgr
+
+enum __MIDL___MIDL_itf_CpUtil_0001_0071_0001
+{
+    CPT_ELW_RIGHT_STANDARD = 0,
+    CPT_ELW_RIGHT_DIGITAL = 1,
+    CPT_ELW_RIGHT_KOBA = 2
+};
+
+struct __declspec(uuid("a162f0d1-894a-48d1-bdf4-e8589ea7607b"))
+ICpElwCode : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    long GetCount ( );
+    _variant_t GetData (
+        short type,
+        long index );
+    _bstr_t CodeToName (
+        _bstr_t code );
+    _variant_t GetStockElwBaseList ( );
+    _bstr_t GetStockElwBaseCode (
+        _bstr_t bstrCode );
+    _bstr_t GetStockElwBaseName (
+        _bstr_t bstrCode );
+    _variant_t GetStockElwIssuerList ( );
+    _variant_t GetStockElwLpCodeList (
+        _bstr_t bstrCode );
+    _bstr_t GetNameByStockElwLpCode (
+        _bstr_t bstrLpCode );
+    _variant_t GetStockElwBasketCodeList (
+        _bstr_t bstrCode );
+    _variant_t GetStockElwBasketCompList (
+        _bstr_t bstrCode );
+    _variant_t GetStockElwCodeListByBaseCode (
+        _bstr_t bstrCode );
+    _variant_t GetStockElwCodeListByRightType (
+        CPE_ECT_ELW_RIGHT_TYPE eRightType );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_GetCount (
+        /*[out,retval]*/ long * pRet ) = 0;
+      virtual HRESULT __stdcall raw_GetData (
+        /*[in]*/ short type,
+        /*[in]*/ long index,
+        /*[out,retval]*/ VARIANT * pVal ) = 0;
+      virtual HRESULT __stdcall raw_CodeToName (
+        /*[in]*/ BSTR code,
+        /*[out,retval]*/ BSTR * pRet ) = 0;
+      virtual HRESULT __stdcall raw_GetStockElwBaseList (
+        /*[out,retval]*/ VARIANT * pRetVal ) = 0;
+      virtual HRESULT __stdcall raw_GetStockElwBaseCode (
+        /*[in]*/ BSTR bstrCode,
+        /*[out,retval]*/ BSTR * pCode ) = 0;
+      virtual HRESULT __stdcall raw_GetStockElwBaseName (
+        /*[in]*/ BSTR bstrCode,
+        /*[out,retval]*/ BSTR * pName ) = 0;
+      virtual HRESULT __stdcall raw_GetStockElwIssuerList (
+        /*[out,retval]*/ VARIANT * pRetVal ) = 0;
+      virtual HRESULT __stdcall raw_GetStockElwLpCodeList (
+        /*[in]*/ BSTR bstrCode,
+        /*[out,retval]*/ VARIANT * pRetVal ) = 0;
+      virtual HRESULT __stdcall raw_GetNameByStockElwLpCode (
+        /*[in]*/ BSTR bstrLpCode,
+        /*[out,retval]*/ BSTR * pName ) = 0;
+      virtual HRESULT __stdcall raw_GetStockElwBasketCodeList (
+        /*[in]*/ BSTR bstrCode,
+        /*[out,retval]*/ VARIANT * pRet ) = 0;
+      virtual HRESULT __stdcall raw_GetStockElwBasketCompList (
+        /*[in]*/ BSTR bstrCode,
+        /*[out,retval]*/ VARIANT * pRet ) = 0;
+      virtual HRESULT __stdcall raw_GetStockElwCodeListByBaseCode (
+        /*[in]*/ BSTR bstrCode,
+        /*[out,retval]*/ VARIANT * pRet ) = 0;
+      virtual HRESULT __stdcall raw_GetStockElwCodeListByRightType (
+        /*[in]*/ CPE_ECT_ELW_RIGHT_TYPE eRightType,
+        /*[out,retval]*/ VARIANT * pRetVal ) = 0;
+};
+
+struct __declspec(uuid("3ab3c774-9971-4bd3-9393-183641a5028d"))
+CpElwCode;
+    // [ default ] interface ICpElwCode
+
+enum __MIDL___MIDL_itf_CpUtil_0001_0072_0001
+{
+    USTYPE_ALL = 1,
+    USTYPE_COUNTRY = 2,
+    USTYPE_UPJONG = 3,
+    USTYPE_JONGMOK = 4,
+    USTYPE_DR = 5,
+    USTYPE_RAW = 6,
+    USTYPE_EXCHANGE = 7
+};
+
+struct __declspec(uuid("e1698433-8c49-4075-bdf8-0c0a23c61a2a"))
+ICpUsCode : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    _variant_t GetUsCodeList (
+        USTYPE USTYPE );
+    _bstr_t GetNameByUsCode (
+        _bstr_t bstrUsCode );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_GetUsCodeList (
+        /*[in]*/ USTYPE USTYPE,
+        /*[out,retval]*/ VARIANT * pRetVal ) = 0;
+      virtual HRESULT __stdcall raw_GetNameByUsCode (
+        /*[in]*/ BSTR bstrUsCode,
+        /*[out,retval]*/ BSTR * pName ) = 0;
+};
+
+struct __declspec(uuid("03948751-cf92-443e-81d9-94351e0f51ff"))
+CpUsCode;
+    // [ default ] interface ICpUsCode
+
+enum __MIDL___MIDL_itf_CpUtil_0001_0073_0001
+{
+    OT_CALL = 1,
+    OT_PUT = -1
+};
+
+enum __MIDL___MIDL_itf_CpUtil_0001_0073_0002
+{
+    VT_HISTORY = 0,
+    VT_IMPLIED = 1
+};
+
+struct __declspec(uuid("ae72a9fd-e459-4678-b8ca-7417bef26142"))
+ICpCalcOptGreeks : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(put=PutCallPutType))
+    CALLPUT_TYPE CallPutType;
+    __declspec(property(put=PutPrice))
+    double Price;
+    __declspec(property(put=PutUnderPrice))
+    double UnderPrice;
+    __declspec(property(put=PutExerPrice))
+    double ExerPrice;
+    __declspec(property(put=PutVolatilityType))
+    VOLATILITY_TYPE VolatilityType;
+    __declspec(property(put=PutVolatility))
+    double Volatility;
+    __declspec(property(put=PutExpirDays))
+    long ExpirDays;
+    __declspec(property(put=PutRFInterRate))
+    double RFInterRate;
+    __declspec(property(put=PutDividRate))
+    double DividRate;
+    __declspec(property(get=GetTV))
+    double TV;
+    __declspec(property(get=GetDelta))
+    double Delta;
+    __declspec(property(get=GetGamma))
+    double Gamma;
+    __declspec(property(get=GetTheta))
+    double Theta;
+    __declspec(property(get=GetVega))
+    double Vega;
+    __declspec(property(get=GetRho))
+    double Rho;
+    __declspec(property(get=GetIV))
+    double IV;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    void PutCallPutType (
+        CALLPUT_TYPE _arg1 );
+    void PutPrice (
+        double _arg1 );
+    void PutUnderPrice (
+        double _arg1 );
+    void PutExerPrice (
+        double _arg1 );
+    void PutVolatilityType (
+        VOLATILITY_TYPE _arg1 );
+    void PutVolatility (
+        double _arg1 );
+    void PutExpirDays (
+        long _arg1 );
+    void PutRFInterRate (
+        double _arg1 );
+    void PutDividRate (
+        double _arg1 );
+    HRESULT Calculate ( );
+    double GetTV ( );
+    double GetDelta ( );
+    double GetGamma ( );
+    double GetTheta ( );
+    double GetVega ( );
+    double GetRho ( );
+    double GetIV ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_CallPutType (
+        /*[in]*/ CALLPUT_TYPE _arg1 ) = 0;
+      virtual HRESULT __stdcall put_Price (
+        /*[in]*/ double _arg1 ) = 0;
+      virtual HRESULT __stdcall put_UnderPrice (
+        /*[in]*/ double _arg1 ) = 0;
+      virtual HRESULT __stdcall put_ExerPrice (
+        /*[in]*/ double _arg1 ) = 0;
+      virtual HRESULT __stdcall put_VolatilityType (
+        /*[in]*/ VOLATILITY_TYPE _arg1 ) = 0;
+      virtual HRESULT __stdcall put_Volatility (
+        /*[in]*/ double _arg1 ) = 0;
+      virtual HRESULT __stdcall put_ExpirDays (
+        /*[in]*/ long _arg1 ) = 0;
+      virtual HRESULT __stdcall put_RFInterRate (
+        /*[in]*/ double _arg1 ) = 0;
+      virtual HRESULT __stdcall put_DividRate (
+        /*[in]*/ double _arg1 ) = 0;
+      virtual HRESULT __stdcall raw_Calculate ( ) = 0;
+      virtual HRESULT __stdcall get_TV (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall get_Delta (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall get_Gamma (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall get_Theta (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall get_Vega (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall get_Rho (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall get_IV (
+        /*[out,retval]*/ double * pVal ) = 0;
+};
+
+struct __declspec(uuid("ba69760d-1698-4bc1-8947-e7f2d07f2173"))
+CpCalcOptGreeks;
+    // [ default ] interface ICpCalcOptGreeks
+
+//
+// Named GUID constants initializations
+//
+
+extern "C" const GUID __declspec(selectany) LIBID_CPUTILLib =
+    {0x2da9c35c,0xfe59,0x4a32,{0xa9,0x42,0x32,0x5e,0xe8,0xa6,0xf6,0x59}};
+extern "C" const GUID __declspec(selectany) IID_ICpUserInfo =
+    {0x363af9f5,0x0612,0x4e75,{0xa5,0x63,0x21,0x18,0x51,0xb4,0x5a,0x16}};
+extern "C" const GUID __declspec(selectany) CLSID_CpUserInfo =
+    {0xdb656203,0x951a,0x4d6a,{0x97,0x2e,0x01,0x38,0xde,0xbd,0x66,0x48}};
+extern "C" const GUID __declspec(selectany) CLSID_CpStockCode =
+    {0x2297f381,0xffb1,0x45c6,{0xaa,0x80,0x4c,0x69,0x13,0xf4,0x5e,0x91}};
+extern "C" const GUID __declspec(selectany) IID_ICpStockCode =
+    {0x081aaeaa,0xdfaf,0x4b7f,{0xa5,0x3a,0x0d,0x1e,0x4a,0xc5,0x85,0x84}};
+extern "C" const GUID __declspec(selectany) IID_ICpFutureCode =
+    {0xfddf6f98,0xb0ae,0x4b86,{0x8c,0x62,0xcc,0x44,0x69,0x07,0x5f,0x65}};
+extern "C" const GUID __declspec(selectany) CLSID_CpFutureCode =
+    {0x15a37730,0xa973,0x47d7,{0x90,0x58,0x26,0x86,0x09,0x76,0x42,0xf8}};
+extern "C" const GUID __declspec(selectany) CLSID_CpKFutureCode =
+    {0xe6bff246,0x8b47,0x4833,{0xae,0x20,0xf8,0x53,0xbd,0xaa,0x32,0x48}};
+extern "C" const GUID __declspec(selectany) IID_ICpOptionCode =
+    {0x312ade72,0x2c5c,0x4084,{0xad,0xce,0x9b,0xbb,0xaf,0xef,0xad,0x56}};
+extern "C" const GUID __declspec(selectany) CLSID_CpOptionCode =
+    {0x7566755f,0x36ad,0x43ef,{0xb3,0x88,0x4c,0xc6,0x2c,0xa9,0x42,0x79}};
+extern "C" const GUID __declspec(selectany) IID_ICpSoptionCode =
+    {0xb41fb07e,0x3901,0x4ff8,{0x9d,0x66,0x1c,0x06,0xd5,0x0e,0xc5,0xfc}};
+extern "C" const GUID __declspec(selectany) CLSID_CpSoptionCode =
+    {0xf23d75c0,0xa0ac,0x4988,{0x86,0x5c,0x54,0xb3,0xb9,0xd0,0x09,0xb2}};
+extern "C" const GUID __declspec(selectany) IID_ICpCybos =
+    {0x3722b490,0xa340,0x45c5,{0xbd,0xa5,0x3c,0x73,0x6d,0xde,0xb4,0x23}};
+extern "C" const GUID __declspec(selectany) DIID__ICpCybosEvents =
+    {0x17f70631,0x56e5,0x40fc,{0xb9,0x4f,0x44,0xad,0xd3,0xa8,0x50,0xb1}};
+extern "C" const GUID __declspec(selectany) CLSID_CpCybos =
+    {0x19a11288,0x2b28,0x45c4,{0x8c,0xd4,0x3a,0x12,0xb6,0x0c,0x3b,0xd7}};
+extern "C" const GUID __declspec(selectany) IID_ICpCodeMgr =
+    {0x6893a6d3,0x03fd,0x46eb,{0xbb,0x0e,0x28,0xa2,0x2d,0x3a,0xec,0x9b}};
+extern "C" const GUID __declspec(selectany) CLSID_CpCodeMgr =
+    {0x995b5abe,0xed4b,0x4d04,{0xb4,0x6d,0x62,0x38,0xab,0x66,0xea,0x71}};
+extern "C" const GUID __declspec(selectany) IID_ICpElwCode =
+    {0xa162f0d1,0x894a,0x48d1,{0xbd,0xf4,0xe8,0x58,0x9e,0xa7,0x60,0x7b}};
+extern "C" const GUID __declspec(selectany) CLSID_CpElwCode =
+    {0x3ab3c774,0x9971,0x4bd3,{0x93,0x93,0x18,0x36,0x41,0xa5,0x02,0x8d}};
+extern "C" const GUID __declspec(selectany) IID_ICpUsCode =
+    {0xe1698433,0x8c49,0x4075,{0xbd,0xf8,0x0c,0x0a,0x23,0xc6,0x1a,0x2a}};
+extern "C" const GUID __declspec(selectany) CLSID_CpUsCode =
+    {0x03948751,0xcf92,0x443e,{0x81,0xd9,0x94,0x35,0x1e,0x0f,0x51,0xff}};
+extern "C" const GUID __declspec(selectany) IID_ICpCalcOptGreeks =
+    {0xae72a9fd,0xe459,0x4678,{0xb8,0xca,0x74,0x17,0xbe,0xf2,0x61,0x42}};
+extern "C" const GUID __declspec(selectany) CLSID_CpCalcOptGreeks =
+    {0xba69760d,0x1698,0x4bc1,{0x89,0x47,0xe7,0xf2,0xd0,0x7f,0x21,0x73}};
+
+//
+// Wrapper method implementations
+//
+
+#include "j:\projects\portfoliomanager\90.프로토타입\stockcurdlg\debug\cputil.tli"
+
+} // namespace CPUTILLib
+
+#pragma pack(pop)

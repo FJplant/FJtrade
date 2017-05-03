@@ -1,0 +1,756 @@
+﻿// Created by Microsoft (R) C/C++ Compiler Version 15.00.30729.01 (947ad6b9).
+//
+// j:\projects\portfoliomanager\90.프로토타입\stockcurdlg\debug\cputil.tli
+//
+// Wrapper implementations for Win32 type library C:\app\DAISHIN\CYBOSPLUS\cputil.dll
+// compiler-generated file created 08/20/11 at 04:06:17 - DO NOT EDIT!
+
+#pragma once
+
+//
+// interface ICpUserInfo wrapper method implementations
+//
+
+inline _bstr_t ICpUserInfo::GetComID ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_ComID(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline long ICpUserInfo::VerifyUserInfo ( _bstr_t SocialNo, _bstr_t UserName ) {
+    long _result = 0;
+    HRESULT _hr = raw_VerifyUserInfo(SocialNo, UserName, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface ICpStockCode wrapper method implementations
+//
+
+inline _bstr_t ICpStockCode::CodeToName ( _bstr_t code ) {
+    BSTR _result = 0;
+    HRESULT _hr = raw_CodeToName(code, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t ICpStockCode::FullCodeToName ( _bstr_t code ) {
+    BSTR _result = 0;
+    HRESULT _hr = raw_FullCodeToName(code, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline short ICpStockCode::GetCount ( ) {
+    short _result = 0;
+    HRESULT _hr = raw_GetCount(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline _variant_t ICpStockCode::GetData ( short type, short index ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = raw_GetData(type, index, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline _bstr_t ICpStockCode::CodeToFullCode ( _bstr_t code ) {
+    BSTR _result = 0;
+    HRESULT _hr = raw_CodeToFullCode(code, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t ICpStockCode::FullCodeToCode ( _bstr_t code ) {
+    BSTR _result = 0;
+    HRESULT _hr = raw_FullCodeToCode(code, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t ICpStockCode::NameToCode ( _bstr_t name ) {
+    BSTR _result = 0;
+    HRESULT _hr = raw_NameToCode(name, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline long ICpStockCode::CodeToIndex ( _bstr_t code ) {
+    long _result = 0;
+    HRESULT _hr = raw_CodeToIndex(code, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long ICpStockCode::GetPriceUnit ( _bstr_t code, long basePrice, VARIANT_BOOL directionUp ) {
+    long _result = 0;
+    HRESULT _hr = raw_GetPriceUnit(code, basePrice, directionUp, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface ICpFutureCode wrapper method implementations
+//
+
+inline short ICpFutureCode::GetCount ( ) {
+    short _result = 0;
+    HRESULT _hr = raw_GetCount(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline _variant_t ICpFutureCode::GetData ( short type, short index ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = raw_GetData(type, index, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline _bstr_t ICpFutureCode::CodeToName ( _bstr_t code ) {
+    BSTR _result = 0;
+    HRESULT _hr = raw_CodeToName(code, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+//
+// interface ICpOptionCode wrapper method implementations
+//
+
+inline short ICpOptionCode::GetCount ( ) {
+    short _result = 0;
+    HRESULT _hr = raw_GetCount(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline _variant_t ICpOptionCode::GetData ( short type, short index ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = raw_GetData(type, index, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline _bstr_t ICpOptionCode::CodeToName ( _bstr_t code ) {
+    BSTR _result = 0;
+    HRESULT _hr = raw_CodeToName(code, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+//
+// interface ICpSoptionCode wrapper method implementations
+//
+
+inline short ICpSoptionCode::GetCount ( ) {
+    short _result = 0;
+    HRESULT _hr = raw_GetCount(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline _variant_t ICpSoptionCode::GetData ( short type, short index ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = raw_GetData(type, index, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline _bstr_t ICpSoptionCode::CodeToName ( _bstr_t code ) {
+    BSTR _result = 0;
+    HRESULT _hr = raw_CodeToName(code, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+//
+// interface ICpCybos wrapper method implementations
+//
+
+inline long ICpCybos::GetIsConnect ( ) {
+    long _result = 0;
+    HRESULT _hr = get_IsConnect(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline short ICpCybos::GetServerType ( ) {
+    short _result = 0;
+    HRESULT _hr = get_ServerType(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long ICpCybos::GetLimitRequestRemainTime ( ) {
+    long _result = 0;
+    HRESULT _hr = get_LimitRequestRemainTime(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long ICpCybos::GetLimitRemainCount ( LIMIT_TYPE limitType ) {
+    long _result = 0;
+    HRESULT _hr = raw_GetLimitRemainCount(limitType, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// dispinterface _ICpCybosEvents wrapper method implementations
+//
+
+inline HRESULT _ICpCybosEvents::OnDisconnect ( ) {
+    HRESULT _result = 0;
+    _com_dispatch_method(this, 0x1, DISPATCH_METHOD, VT_ERROR, (void*)&_result, NULL);
+    return _result;
+}
+
+//
+// interface ICpCodeMgr wrapper method implementations
+//
+
+inline _variant_t ICpCodeMgr::GetGroupCodeList ( long GroupCode ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = raw_GetGroupCodeList(GroupCode, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline _bstr_t ICpCodeMgr::CodeToName ( _bstr_t code ) {
+    BSTR _result = 0;
+    HRESULT _hr = raw_CodeToName(code, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _variant_t ICpCodeMgr::GetUsCodeList ( short type ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = raw_GetUsCodeList(type, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline _bstr_t ICpCodeMgr::GetUsCodeName ( _bstr_t code ) {
+    BSTR _result = 0;
+    HRESULT _hr = raw_GetUsCodeName(code, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline int ICpCodeMgr::GetStockMarginRate ( _bstr_t code ) {
+    int _result = 0;
+    HRESULT _hr = raw_GetStockMarginRate(code, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline int ICpCodeMgr::GetStockMemeMin ( _bstr_t code ) {
+    int _result = 0;
+    HRESULT _hr = raw_GetStockMemeMin(code, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline _variant_t ICpCodeMgr::GetStockElwBasketCodeList ( _bstr_t bstrCode ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = raw_GetStockElwBasketCodeList(bstrCode, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline _variant_t ICpCodeMgr::GetStockElwBasketCompList ( _bstr_t bstrCode ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = raw_GetStockElwBasketCompList(bstrCode, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline short ICpCodeMgr::GetMarketStartTime ( ) {
+    short _result = 0;
+    HRESULT _hr = raw_GetMarketStartTime(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline short ICpCodeMgr::GetMarketEndTime ( ) {
+    short _result = 0;
+    HRESULT _hr = raw_GetMarketEndTime(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline _bstr_t ICpCodeMgr::GetStockIndustryCode ( _bstr_t bstrCode ) {
+    BSTR _result = 0;
+    HRESULT _hr = raw_GetStockIndustryCode(bstrCode, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline CPE_MARKET_KIND ICpCodeMgr::GetStockMarketKind ( _bstr_t bstrCode ) {
+    CPE_MARKET_KIND _result;
+    HRESULT _hr = raw_GetStockMarketKind(bstrCode, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline CPE_CONTROL_KIND ICpCodeMgr::GetStockControlKind ( _bstr_t bstrCode ) {
+    CPE_CONTROL_KIND _result;
+    HRESULT _hr = raw_GetStockControlKind(bstrCode, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline CPE_SUPERVISION_KIND ICpCodeMgr::GetStockSupervisionKind ( _bstr_t bstrCode ) {
+    CPE_SUPERVISION_KIND _result;
+    HRESULT _hr = raw_GetStockSupervisionKind(bstrCode, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline CPE_CAPITAL_SIZE ICpCodeMgr::GetStockCapital ( _bstr_t bstrCode ) {
+    CPE_CAPITAL_SIZE _result;
+    HRESULT _hr = raw_GetStockCapital(bstrCode, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline int ICpCodeMgr::GetStockFiscalMonth ( _bstr_t bstrCode ) {
+    int _result = 0;
+    HRESULT _hr = raw_GetStockFiscalMonth(bstrCode, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline int ICpCodeMgr::GetStockGroupCode ( _bstr_t bstrCode ) {
+    int _result = 0;
+    HRESULT _hr = raw_GetStockGroupCode(bstrCode, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline CPE_KOSPI200_KIND ICpCodeMgr::GetStockKospi200Kind ( _bstr_t bstrCode ) {
+    CPE_KOSPI200_KIND _result;
+    HRESULT _hr = raw_GetStockKospi200Kind(bstrCode, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline CPE_STOCK_STATUS_KIND ICpCodeMgr::GetStockStatusKind ( _bstr_t bstrCode ) {
+    CPE_STOCK_STATUS_KIND _result;
+    HRESULT _hr = raw_GetStockStatusKind(bstrCode, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline _variant_t ICpCodeMgr::GetGroupList ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = raw_GetGroupList(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline _bstr_t ICpCodeMgr::GetGroupName ( _bstr_t bstrCode ) {
+    BSTR _result = 0;
+    HRESULT _hr = raw_GetGroupName(bstrCode, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _variant_t ICpCodeMgr::GetIndustryList ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = raw_GetIndustryList(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline _variant_t ICpCodeMgr::GetKrxIndustryList ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = raw_GetKrxIndustryList(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline _bstr_t ICpCodeMgr::GetIndustryName ( _bstr_t bstrCode ) {
+    BSTR _result = 0;
+    HRESULT _hr = raw_GetIndustryName(bstrCode, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _variant_t ICpCodeMgr::GetMemberList ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = raw_GetMemberList(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline _bstr_t ICpCodeMgr::GetMemberName ( _bstr_t bstrCode ) {
+    BSTR _result = 0;
+    HRESULT _hr = raw_GetMemberName(bstrCode, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _variant_t ICpCodeMgr::GetKosdaqIndustry1List ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = raw_GetKosdaqIndustry1List(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline _variant_t ICpCodeMgr::GetKosdaqIndustry2List ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = raw_GetKosdaqIndustry2List(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline _variant_t ICpCodeMgr::GetStockListByMarket ( CPE_MARKET_KIND MarketKind ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = raw_GetStockListByMarket(MarketKind, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline CPE_KSE_SECTION_KIND ICpCodeMgr::GetStockSectionKind ( _bstr_t bstrCode ) {
+    CPE_KSE_SECTION_KIND _result;
+    HRESULT _hr = raw_GetStockSectionKind(bstrCode, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline CPE_LAC_KIND ICpCodeMgr::GetStockLacKind ( _bstr_t bstrCode ) {
+    CPE_LAC_KIND _result;
+    HRESULT _hr = raw_GetStockLacKind(bstrCode, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline _bstr_t ICpCodeMgr::GetStockCodeByName ( _bstr_t bstrName ) {
+    BSTR _result = 0;
+    HRESULT _hr = raw_GetStockCodeByName(bstrName, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline long ICpCodeMgr::GetStockListedDate ( _bstr_t bstrName ) {
+    long _result = 0;
+    HRESULT _hr = raw_GetStockListedDate(bstrName, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long ICpCodeMgr::GetStockMaxPrice ( _bstr_t bstrName ) {
+    long _result = 0;
+    HRESULT _hr = raw_GetStockMaxPrice(bstrName, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long ICpCodeMgr::GetStockMinPrice ( _bstr_t bstrName ) {
+    long _result = 0;
+    HRESULT _hr = raw_GetStockMinPrice(bstrName, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long ICpCodeMgr::GetStockParPrice ( _bstr_t bstrName ) {
+    long _result = 0;
+    HRESULT _hr = raw_GetStockParPrice(bstrName, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long ICpCodeMgr::GetStockStdPrice ( _bstr_t bstrName ) {
+    long _result = 0;
+    HRESULT _hr = raw_GetStockStdPrice(bstrName, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long ICpCodeMgr::GetStockYdOpenPrice ( _bstr_t bstrName ) {
+    long _result = 0;
+    HRESULT _hr = raw_GetStockYdOpenPrice(bstrName, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long ICpCodeMgr::GetStockYdHighPrice ( _bstr_t bstrName ) {
+    long _result = 0;
+    HRESULT _hr = raw_GetStockYdHighPrice(bstrName, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long ICpCodeMgr::GetStockYdLowPrice ( _bstr_t bstrName ) {
+    long _result = 0;
+    HRESULT _hr = raw_GetStockYdLowPrice(bstrName, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long ICpCodeMgr::GetStockYdClosePrice ( _bstr_t bstrName ) {
+    long _result = 0;
+    HRESULT _hr = raw_GetStockYdClosePrice(bstrName, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline CPE_ECT_PARPRICE_CHANGE ICpCodeMgr::GetStockParPriceChageType ( _bstr_t bstrName ) {
+    CPE_ECT_PARPRICE_CHANGE _result;
+    HRESULT _hr = raw_GetStockParPriceChageType(bstrName, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long ICpCodeMgr::IsStockCreditEnable ( _bstr_t bstrName ) {
+    long _result = 0;
+    HRESULT _hr = raw_IsStockCreditEnable(bstrName, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface ICpElwCode wrapper method implementations
+//
+
+inline long ICpElwCode::GetCount ( ) {
+    long _result = 0;
+    HRESULT _hr = raw_GetCount(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline _variant_t ICpElwCode::GetData ( short type, long index ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = raw_GetData(type, index, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline _bstr_t ICpElwCode::CodeToName ( _bstr_t code ) {
+    BSTR _result = 0;
+    HRESULT _hr = raw_CodeToName(code, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _variant_t ICpElwCode::GetStockElwBaseList ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = raw_GetStockElwBaseList(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline _bstr_t ICpElwCode::GetStockElwBaseCode ( _bstr_t bstrCode ) {
+    BSTR _result = 0;
+    HRESULT _hr = raw_GetStockElwBaseCode(bstrCode, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t ICpElwCode::GetStockElwBaseName ( _bstr_t bstrCode ) {
+    BSTR _result = 0;
+    HRESULT _hr = raw_GetStockElwBaseName(bstrCode, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _variant_t ICpElwCode::GetStockElwIssuerList ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = raw_GetStockElwIssuerList(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline _variant_t ICpElwCode::GetStockElwLpCodeList ( _bstr_t bstrCode ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = raw_GetStockElwLpCodeList(bstrCode, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline _bstr_t ICpElwCode::GetNameByStockElwLpCode ( _bstr_t bstrLpCode ) {
+    BSTR _result = 0;
+    HRESULT _hr = raw_GetNameByStockElwLpCode(bstrLpCode, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _variant_t ICpElwCode::GetStockElwBasketCodeList ( _bstr_t bstrCode ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = raw_GetStockElwBasketCodeList(bstrCode, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline _variant_t ICpElwCode::GetStockElwBasketCompList ( _bstr_t bstrCode ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = raw_GetStockElwBasketCompList(bstrCode, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline _variant_t ICpElwCode::GetStockElwCodeListByBaseCode ( _bstr_t bstrCode ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = raw_GetStockElwCodeListByBaseCode(bstrCode, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline _variant_t ICpElwCode::GetStockElwCodeListByRightType ( CPE_ECT_ELW_RIGHT_TYPE eRightType ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = raw_GetStockElwCodeListByRightType(eRightType, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+//
+// interface ICpUsCode wrapper method implementations
+//
+
+inline _variant_t ICpUsCode::GetUsCodeList ( USTYPE USTYPE ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = raw_GetUsCodeList(USTYPE, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline _bstr_t ICpUsCode::GetNameByUsCode ( _bstr_t bstrUsCode ) {
+    BSTR _result = 0;
+    HRESULT _hr = raw_GetNameByUsCode(bstrUsCode, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+//
+// interface ICpCalcOptGreeks wrapper method implementations
+//
+
+inline void ICpCalcOptGreeks::PutCallPutType ( CALLPUT_TYPE _arg1 ) {
+    HRESULT _hr = put_CallPutType(_arg1);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline void ICpCalcOptGreeks::PutPrice ( double _arg1 ) {
+    HRESULT _hr = put_Price(_arg1);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline void ICpCalcOptGreeks::PutUnderPrice ( double _arg1 ) {
+    HRESULT _hr = put_UnderPrice(_arg1);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline void ICpCalcOptGreeks::PutExerPrice ( double _arg1 ) {
+    HRESULT _hr = put_ExerPrice(_arg1);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline void ICpCalcOptGreeks::PutVolatilityType ( VOLATILITY_TYPE _arg1 ) {
+    HRESULT _hr = put_VolatilityType(_arg1);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline void ICpCalcOptGreeks::PutVolatility ( double _arg1 ) {
+    HRESULT _hr = put_Volatility(_arg1);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline void ICpCalcOptGreeks::PutExpirDays ( long _arg1 ) {
+    HRESULT _hr = put_ExpirDays(_arg1);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline void ICpCalcOptGreeks::PutRFInterRate ( double _arg1 ) {
+    HRESULT _hr = put_RFInterRate(_arg1);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline void ICpCalcOptGreeks::PutDividRate ( double _arg1 ) {
+    HRESULT _hr = put_DividRate(_arg1);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline HRESULT ICpCalcOptGreeks::Calculate ( ) {
+    HRESULT _hr = raw_Calculate();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline double ICpCalcOptGreeks::GetTV ( ) {
+    double _result = 0;
+    HRESULT _hr = get_TV(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline double ICpCalcOptGreeks::GetDelta ( ) {
+    double _result = 0;
+    HRESULT _hr = get_Delta(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline double ICpCalcOptGreeks::GetGamma ( ) {
+    double _result = 0;
+    HRESULT _hr = get_Gamma(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline double ICpCalcOptGreeks::GetTheta ( ) {
+    double _result = 0;
+    HRESULT _hr = get_Theta(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline double ICpCalcOptGreeks::GetVega ( ) {
+    double _result = 0;
+    HRESULT _hr = get_Vega(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline double ICpCalcOptGreeks::GetRho ( ) {
+    double _result = 0;
+    HRESULT _hr = get_Rho(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline double ICpCalcOptGreeks::GetIV ( ) {
+    double _result = 0;
+    HRESULT _hr = get_IV(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
